@@ -20,8 +20,20 @@
         }
         body {
             background-color: rgb(29, 65, 108);
-            scrollbar-color: rgb(177, 11, 11);
         }
+
+        /* Customizing OverlayScrollbars */
+        .os-host-scrollbar-horizontal > .os-scrollbar-track {
+            height: 12px; /* height of the scrollbar track */
+            background-color: rgb(249, 249, 249); /* color of the scrollbar track */
+            border: 1px solid rgb(229, 229, 229); /* border of the scrollbar track */
+        }
+        .os-host-scrollbar-horizontal > .os-scrollbar-thumb {
+            width: 6px; /* width of the scrollbar thumb */
+            background-color: rgb(122, 122, 122); /* color of the scrollbar thumb */
+            border-radius: 8px;
+        }
+
         .main-container {
             background-color: rgb(245, 245, 245);
         }
@@ -429,6 +441,8 @@ Maecenas commodo eros placerat convallis interdum. Integer tortor leo, viverra s
 
     <script src="assets/scripts/dropdown.js"></script>
     <script src="assets/scripts/top-scroll.js"></script>
+    <script src="path-to-overlay-scrollbars/OverlayScrollbars.min.js"></script>
+
     
 </body>
 </html>
