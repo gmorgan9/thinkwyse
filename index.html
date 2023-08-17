@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkWyse</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/83cbcc9270.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background-color: rgb(29, 65, 108);
+        }
+        .main-container {
+            background-color: rgb(237, 235, 234);
+        }
+
+        .top-container {
+            background-color: rgb(237, 235, 234);
+            position: sticky; /* Make the top-container sticky */
+            top: 0; /* Stick to the top of the viewport */
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            position: sticky; /* Keep the nav sticky as well */
+            top: 0; /* Stick to the top of the viewport */
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000; /* Add z-index to ensure the nav appears above other content */
+        }
+        
+        /* Dropdown Button */
+        .dropbtn {
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: inherit;
+            padding-right: 10px;
+            text-decoration: none;
+            color: rgb(58, 58, 58);
+        }
+
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            color: rgb(70,110,159);
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-container {
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            margin-top: 24px;
+            background-color: rgb(255, 255, 255);
+            top: 40px; 
+            left: 0; 
+            right: 0;
+            border-radius: 5px;
+            
+        }
+        
+        /* GRID */
+
+            /* Style for the two-column layout */
+.dropdown-columns {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+/* Style for each column */
+.dropdown-column {
+    padding: 20px;
+    padding-top: 50px;
+}
+.dropdown-row {
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+}
+.sub-dropdown-column {
+    padding: 20px;
+}
+.sub-dropdown-column a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the column headers */
+.column-header {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Style for links in the columns */
+.dropdown-column a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover effect on links */
+.dropdown-column a:hover {
+    background-color: #f2f2f2;
+}
+
+        /* END GRID */
+
+        .dropdown-content a {
+            color: black;
+            padding: 15px 50px 15px 15px;
+            margin-left: -15px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: rgba(70, 110, 159, 0.05);
+            
+        }
+
+        /* Show the dropdown menu */
+        .show {
+            display: block;
+        }
+
+
+
+
+    .right-side {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .get-started-button {
+        background-color: #929292;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 10px; /* Add some spacing between the Login link and button */
+    }
+
+    .logo {
+        padding-right: 25px;
+    }
+
+    .top-container.scrolled {
+    box-shadow: 0px 2px 5px rgba(100, 100, 100, 0.2);
+}
+
+hr{
+        height: 1px;
+        background-color: #ccc;
+        border: none;
+    }
+    .container {
+        margin-top: 25px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    </style>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="main-container"> <!-- main container -->
+    <div class="top-container">
+        <nav>
+            <div class="nav-container">
+                <a class="logo" href=""><img src="assets/images/think-wyse-bk.png" alt="" width="150"></a>
+
+
+
+
+                <button onclick="toggleDropdown('productDropdown', this)" class="dropbtn">Product <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                <div id="productDropdown" class="dropdown-content">
+                    <div class="dropdown-columns">
+
+                        <div class="dropdown-column" style="width: 20%;">
+                            <p class="column-header">overview</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                            <a href="#">
+                                <div class="head" style="font-weight: 500;">
+                                    Product overview &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i>
+                                </div>
+                                <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">See all that ThinkWyse has to offer at a glance</p>
+                            </a>
+                            <a style="font-weight: 500;" href="#">See all features &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                        </div>
+
+                        <div class="dropdown-column" style="width: 35%;">
+                            <p class="column-header">key features</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                            <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                <div class="sub-column" style="margin-right: 50px;">
+                                    <a href="#"><i class="bi bi-diagram-3"></i>&nbsp;&nbsp; Workflow Builder</a>
+                                    <a href="#"><i class="bi bi-signpost-split"></i>&nbsp;&nbsp; Timeline</a>
+                                    <a href="#"><i class="bi bi-node-plus"></i>&nbsp;&nbsp; App Integrations</a>
+                                    <a href="#"><i class="bi bi-kanban"></i>&nbsp;&nbsp; Boards</a>
+                                    <a href="#"><i class="bi bi-calendar4"></i>&nbsp;&nbsp; Calendar</a>
+                                </div>
+                                <div class="sub-column">
+                                    <a href="#"><i class="bi bi-graph-up"></i>&nbsp;&nbsp; Reporting</a>
+                                    <a href="#"><i class="bi bi-layers"></i>&nbsp;&nbsp; Workload</a>
+                                    <a href="#"><i class="bi bi-lightbulb"></i>&nbsp;&nbsp; Goals</a>
+                                    <a href="#"><i class="bi bi-lightning-charge"></i>&nbsp;&nbsp; Automation</a>
+                                    <a href="#"><i class="bi bi-card-heading"></i>&nbsp;&nbsp; Forms</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="toggleDropdown('solutionsDropdown', this)" class="dropbtn">Solutions <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                <div id="solutionsDropdown" class="dropdown-content">
+                    <div class="dropdown-columns">
+
+                        <div class="dropdown-column" style="width: 20%;">
+                            <p class="column-header">teams</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                                <a href="#">Operations</a>
+                                <a href="#">Marketing</a>
+                                <a href="#">IT</a>
+                                <a href="#">Leaders</a>
+                        </div>
+
+                        <div class="dropdown-column" style="width: 40%;">
+                            <p class="column-header">uses</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                            <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                <div class="sub-column" style="margin-right: 50px;">
+                                    <a href="#">Project Management</a>
+                                    <a href="#">Task Management</a>
+                                    <a href="#">Strategic Management</a>
+                                    <a href="#">Campaign Management</a>
+                                    <a href="#">Creative Management</a>
+                                </div>
+                                <div class="sub-column">
+                                    <a href="#">Agile Management</a>
+                                    <a href="#">Request Tracking</a>
+                                    <a href="#">Remote teams</a>
+                                    <a href="#">Productivity</a>
+                                    <a href="#"><span style="font-weight: 500;">View all uses</span> &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="toggleDropdown('resourcesDropdown', this)" class="dropbtn">Resources <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                <div id="resourcesDropdown" class="dropdown-content">
+                    <div class="dropdown-columns">
+
+                        <div class="dropdown-column" style="width: 20%;">
+                            <p class="column-header">learn</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                            <a href="#">
+                                <div class="head" style="font-weight: 500;">
+                                    Work Management Resources
+                                </div>
+                                <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover best practices, watch webinars, get insights</p>
+                            </a>
+                            <a href="#">
+                                <div class="head" style="font-weight: 500;">
+                                    ThinkWyse Guide
+                                </div>
+                                <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get lots of tips, tricks, and advice to get the most from ThinkWyse</p>
+                            </a>
+                            <a href="#">
+                                <div class="head" style="font-weight: 500;">
+                                    Blog
+                                </div>
+                                <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover the latest ThinkWyse product and company news</p>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-column" style="width: 40%;">
+                            <p class="column-header">connect</p>
+                            <hr style="width: 97%; margin-bottom: 10px;">
+                            <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                <div class="sub-column" style="margin-right: 50px;">
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            Events
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Find out about upcoming events near you</p>
+                                    </a>
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            Community Programs
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Connect with and learn from ThinkWyse customers around the world</p>
+                                    </a>
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            Support
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Need help? Contact the ThinkWyse support team</p>
+                                    </a>
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            Partners
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about our partner programs</p>
+                                    </a>
+                                </div>
+                                <div class="sub-column">
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            Developers
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about building apps on the ThinkWyse platform</p>
+                                    </a>
+                                    <a href="#">
+                                        <div class="head" style="font-weight: 500;">
+                                            ThinkWyse for Nonprofits
+                                        </div>
+                                        <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get more information on our nonprofit discount program, and apply.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+           
+                <a class="dropbtn" style="padding-left: 10px;" href="#">Pricing</a>
+
+            </div> <!-- end nav-container -->
+
+            <div class="right-side">
+                <a class="dropbtn" href="#">Log In</a>
+                <button class="get-started-button">Get Started</button>
+            </div>
+
+        </nav>
+    </div>
+    
+
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque cursus lorem sit amet aliquet. Phasellus vestibulum metus tellus, et tempus ex egestas in. In hac habitasse platea dictumst. Suspendisse at orci sed massa feugiat tristique. Donec sit amet elit non dui tempor tempor. Nam congue nisl nec nisl ultrices, a tincidunt ex hendrerit. Suspendisse mattis condimentum lacus ornare malesuada. Donec tincidunt elit mauris, feugiat interdum magna ornare in. Nam tempus gravida sem, vitae fringilla ligula finibus ac. Nullam vel venenatis sem. Mauris interdum mauris eu aliquam lacinia. Vivamus sit amet commodo libero. Vestibulum porta enim a diam dignissim feugiat. Aliquam feugiat nisi sit amet sapien vulputate tincidunt.
+<br><br>
+Donec bibendum ut lacus non dictum. Fusce fringilla sapien at luctus blandit. Nunc interdum nisl vitae mauris tincidunt, ut volutpat erat consequat. Sed rutrum et ante efficitur luctus. Aliquam non risus rhoncus, pretium quam ut, efficitur mauris. Integer vulputate consequat dui, vitae tempor ante. Morbi justo quam, euismod rhoncus pretium non, pharetra ut arcu. Sed in odio lobortis, accumsan ipsum at, ullamcorper lectus. Proin est arcu, mollis ut metus et, sagittis sagittis sapien. Fusce purus sapien, gravida vel orci sed, rutrum feugiat ex. Etiam ornare sapien dictum augue commodo, eu tristique mauris posuere.
+<br><br>
+Nam arcu massa, suscipit sit amet ipsum at, pellentesque rhoncus purus. Quisque accumsan non nisi pellentesque pulvinar. In imperdiet dolor rhoncus, malesuada risus eget, rhoncus nibh. Curabitur ac ligula in nisi volutpat congue at id magna. Praesent id metus in urna venenatis lobortis. Vivamus interdum nisl id metus interdum fermentum. Pellentesque convallis ut sem nec faucibus. Donec enim orci, elementum eu tellus bibendum, pellentesque eleifend dui. Fusce vehicula congue sapien aliquam interdum. Vivamus pulvinar erat id leo cursus lobortis. Vivamus mollis euismod condimentum. Donec sed risus nec orci blandit blandit. Aenean mattis ante a dolor ullamcorper faucibus in at neque.
+<br><br>
+Phasellus iaculis nisl ut mattis feugiat. Curabitur blandit diam et scelerisque finibus. Vivamus nec volutpat orci. Etiam porta nec lectus a posuere. Cras efficitur elit non dolor finibus pharetra. Nullam sapien mauris, semper et sem non, tristique varius sapien. Sed bibendum purus quis hendrerit condimentum. Duis maximus posuere neque, eget pretium lacus aliquam non. Nullam pulvinar, mauris id venenatis vulputate, est purus dictum nulla, ut viverra justo nulla id risus. Mauris et suscipit sapien. Sed fermentum hendrerit elementum. Suspendisse mattis urna et arcu pulvinar vulputate.
+<br><br>
+Integer ac diam laoreet, volutpat est vitae, ultrices felis. Suspendisse cursus enim vitae auctor dapibus. Mauris in eros ac ante gravida euismod. Aliquam dapibus purus vel iaculis faucibus. Maecenas urna leo, aliquam in sollicitudin at, laoreet eget lectus. Nam ut lacus commodo, aliquet metus tincidunt, efficitur metus. Duis eu sem at massa elementum varius. Sed varius pharetra nunc nec hendrerit.
+<br><br>
+Mauris et accumsan nisl. Nam fermentum ut justo sit amet blandit. Ut non egestas purus. Vestibulum tristique augue eu mattis finibus. In malesuada velit ut urna euismod luctus. Sed purus augue, laoreet et tempus ac, condimentum vitae odio. Donec varius, sapien ut tincidunt porta, sapien justo dapibus ante, vitae rhoncus nisl ante at ante. Maecenas dictum scelerisque magna ac aliquam. Quisque fringilla, sapien sed eleifend gravida, urna tellus semper urna, sed cursus est elit ut tellus.
+<br><br>
+Integer vehicula, felis ac fermentum tincidunt, arcu dui varius dui, a viverra neque ex non urna. Donec consequat massa ligula. Phasellus tempor mauris ut nisi fringilla vehicula. Morbi semper ornare nunc, sit amet dignissim orci volutpat et. Pellentesque varius dui ac odio malesuada, nec tempus ante tempor. Donec sed lorem non metus sodales vestibulum sit amet non enim. Donec quam sapien, ultrices elementum sapien vitae, viverra volutpat leo. Nullam malesuada nibh eget nulla eleifend varius. Nullam suscipit ipsum laoreet orci viverra accumsan. Vestibulum congue mauris felis, eget finibus turpis aliquet et. Nunc id aliquet lacus, at fringilla urna. Nullam faucibus hendrerit ipsum, eget auctor massa vehicula non. Phasellus vestibulum pretium nibh, efficitur dignissim sapien. Aliquam erat volutpat.
+<br><br>
+Duis urna lacus, auctor sit amet purus vel, bibendum accumsan enim. Donec vehicula dapibus lorem, pharetra ultrices nisi dignissim eu. Fusce euismod vitae ante eu rutrum. Etiam rhoncus enim ac turpis consectetur, id egestas nibh blandit. Mauris non augue diam. Nulla at dictum odio. Nam vel eros quis tellus faucibus rutrum id non arcu. Pellentesque nec diam mauris. Aliquam vel dignissim quam.
+<br><br>
+Nullam facilisis libero fringilla nisl sollicitudin vehicula. Nam sodales scelerisque est, id accumsan metus tempus eu. Aenean ac felis arcu. In vestibulum tempus lectus. Praesent vitae nunc sollicitudin, ultricies ipsum nec, ultricies augue. Suspendisse sit amet feugiat mauris. Sed laoreet ornare nisi, vitae luctus dolor tincidunt id. Suspendisse sodales libero ut pharetra vestibulum. Donec eu sapien tempor, sollicitudin libero sit amet, finibus enim. Mauris id finibus ex. Aenean tempus tristique ornare. Donec imperdiet, purus placerat molestie blandit, tellus enim vestibulum leo, in sodales nisi lectus convallis ex. Aliquam erat volutpat. Nam felis ante, gravida in convallis vitae, consectetur at dolor.
+<br><br>
+Maecenas commodo eros placerat convallis interdum. Integer tortor leo, viverra sit amet placerat non, tristique ultricies mauris. Aenean bibendum odio nulla, semper mollis metus pulvinar quis. Maecenas fermentum arcu nunc, quis varius sem tincidunt at. Duis venenatis tortor eu viverra gravida. Donec aliquet at magna eu commodo. Suspendisse ultrices posuere ipsum lacinia dapibus. Aliquam est orci, iaculis at volutpat vel, gravida luctus tellus. Suspendisse rutrum urna ac elementum placerat. Suspendisse sed odio eget lectus ultrices fermentum. Aliquam erat volutpat. Proin feugiat tincidunt nunc sed scelerisque. Phasellus eget ex ut diam hendrerit fermentum. Vivamus iaculis arcu quis felis laoreet, sed placerat dui porttitor. Integer commodo, quam commodo laoreet lobortis, sapien magna volutpat massa, et tempor tellus lectus in elit. Vestibulum ullamcorper porta metus, id fermentum mauris fermentum eu.
+<br><br>
+Phasellus iaculis nisl ut mattis feugiat. Curabitur blandit diam et scelerisque finibus. Vivamus nec volutpat orci. Etiam porta nec lectus a posuere. Cras efficitur elit non dolor finibus pharetra. Nullam sapien mauris, semper et sem non, tristique varius sapien. Sed bibendum purus quis hendrerit condimentum. Duis maximus posuere neque, eget pretium lacus aliquam non. Nullam pulvinar, mauris id venenatis vulputate, est purus dictum nulla, ut viverra justo nulla id risus. Mauris et suscipit sapien. Sed fermentum hendrerit elementum. Suspendisse mattis urna et arcu pulvinar vulputate.
+<br><br>
+Integer ac diam laoreet, volutpat est vitae, ultrices felis. Suspendisse cursus enim vitae auctor dapibus. Mauris in eros ac ante gravida euismod. Aliquam dapibus purus vel iaculis faucibus. Maecenas urna leo, aliquam in sollicitudin at, laoreet eget lectus. Nam ut lacus commodo, aliquet metus tincidunt, efficitur metus. Duis eu sem at massa elementum varius. Sed varius pharetra nunc nec hendrerit.
+<br><br>
+Mauris et accumsan nisl. Nam fermentum ut justo sit amet blandit. Ut non egestas purus. Vestibulum tristique augue eu mattis finibus. In malesuada velit ut urna euismod luctus. Sed purus augue, laoreet et tempus ac, condimentum vitae odio. Donec varius, sapien ut tincidunt porta, sapien justo dapibus ante, vitae rhoncus nisl ante at ante. Maecenas dictum scelerisque magna ac aliquam. Quisque fringilla, sapien sed eleifend gravida, urna tellus semper urna, sed cursus est elit ut tellus.
+<br><br>
+Integer vehicula, felis ac fermentum tincidunt, arcu dui varius dui, a viverra neque ex non urna. Donec consequat massa ligula. Phasellus tempor mauris ut nisi fringilla vehicula. Morbi semper ornare nunc, sit amet dignissim orci volutpat et. Pellentesque varius dui ac odio malesuada, nec tempus ante tempor. Donec sed lorem non metus sodales vestibulum sit amet non enim. Donec quam sapien, ultrices elementum sapien vitae, viverra volutpat leo. Nullam malesuada nibh eget nulla eleifend varius. Nullam suscipit ipsum laoreet orci viverra accumsan. Vestibulum congue mauris felis, eget finibus turpis aliquet et. Nunc id aliquet lacus, at fringilla urna. Nullam faucibus hendrerit ipsum, eget auctor massa vehicula non. Phasellus vestibulum pretium nibh, efficitur dignissim sapien. Aliquam erat volutpat.
+<br><br>
+Duis urna lacus, auctor sit amet purus vel, bibendum accumsan enim. Donec vehicula dapibus lorem, pharetra ultrices nisi dignissim eu. Fusce euismod vitae ante eu rutrum. Etiam rhoncus enim ac turpis consectetur, id egestas nibh blandit. Mauris non augue diam. Nulla at dictum odio. Nam vel eros quis tellus faucibus rutrum id non arcu. Pellentesque nec diam mauris. Aliquam vel dignissim quam.
+<br><br>
+Nullam facilisis libero fringilla nisl sollicitudin vehicula. Nam sodales scelerisque est, id accumsan metus tempus eu. Aenean ac felis arcu. In vestibulum tempus lectus. Praesent vitae nunc sollicitudin, ultricies ipsum nec, ultricies augue. Suspendisse sit amet feugiat mauris. Sed laoreet ornare nisi, vitae luctus dolor tincidunt id. Suspendisse sodales libero ut pharetra vestibulum. Donec eu sapien tempor, sollicitudin libero sit amet, finibus enim. Mauris id finibus ex. Aenean tempus tristique ornare. Donec imperdiet, purus placerat molestie blandit, tellus enim vestibulum leo, in sodales nisi lectus convallis ex. Aliquam erat volutpat. Nam felis ante, gravida in convallis vitae, consectetur at dolor.
+<br><br>
+Maecenas commodo eros placerat convallis interdum. Integer tortor leo, viverra sit amet placerat non, tristique ultricies mauris. Aenean bibendum odio nulla, semper mollis metus pulvinar quis. Maecenas fermentum arcu nunc, quis varius sem tincidunt at. Duis venenatis tortor eu viverra gravida. Donec aliquet at magna eu commodo. Suspendisse ultrices posuere ipsum lacinia dapibus. Aliquam est orci, iaculis at volutpat vel, gravida luctus tellus. Suspendisse rutrum urna ac elementum placerat. Suspendisse sed odio eget lectus ultrices fermentum. Aliquam erat volutpat. Proin feugiat tincidunt nunc sed scelerisque. Phasellus eget ex ut diam hendrerit fermentum. Vivamus iaculis arcu quis felis laoreet, sed placerat dui porttitor. Integer commodo, quam commodo laoreet lobortis, sapien magna volutpat massa, et tempor tellus lectus in elit. Vestibulum ullamcorper porta metus, id fermentum mauris fermentum eu.
+            </p>
+        </div>
+    
+
+    </div> <!-- main container -->
+
+    <script src="assets/scripts/dropdown.js"></script>
+    <script src="assets/scripts/top-scroll.js"></script>
+    
+</body>
+</html>
