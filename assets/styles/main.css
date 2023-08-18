@@ -761,6 +761,11 @@ margin-top: 25px;
     color: rgb(13, 14, 16);
     border: 2px solid rgb(13, 14, 16);
 }
+.pricing-basic-button-container button:hover {
+    background-color: rgb(13, 14, 16);
+    color: white;
+    border: 2px solid rgb(13, 14, 16);
+}
 .pricing-section .pricing-card-section .pricing-card-container ul {
     text-align: left;
     padding-left: 0;
