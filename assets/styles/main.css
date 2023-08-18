@@ -857,3 +857,20 @@ margin-top: 25px;
     text-transform: uppercase;
 }
 /* end Policy Section */
+
+/* App Page */
+.app-page {
+    background-color: rgb(245, 245, 245);
+    height: auto;
+    left: 0 !important;
+    right: 0 !important;
+}
+.app-page .app-page-inside {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    line-height: 28px;
+    padding-bottom: 100px;
+}
+/* end App Page */
