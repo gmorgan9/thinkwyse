@@ -346,11 +346,14 @@ margin-top: 25px;
 }
 .img-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 .image-side img {
     width: 70%;
+    margin-top: 15%;
+    margin-left: 10%;
+    
 }
 .tab-button-container {
     /* display: flex; */
@@ -422,7 +425,7 @@ margin-top: 25px;
 }
 /* END why-thinkwyse */
 
-/* START why-thinkwyse */
+/* START get-started */
 .get-started {
     background-color: rgb(244, 241, 241);
     height: auto;
@@ -476,7 +479,7 @@ margin-top: 25px;
     font-weight: 500;
     cursor: pointer;
 }
-/* END why-thinkwyse */
+/* END get-started */
 
 /* START link-footer */
 .link-footer {
