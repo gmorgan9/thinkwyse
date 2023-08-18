@@ -344,7 +344,7 @@ margin-top: 25px;
     color: gray;
     font-weight: 200;
 }
-.image-side {
+.img-container {
     display: flex;
     align-items: center;
     justify-content: center;
