@@ -407,12 +407,14 @@ margin-top: 25px;
     font-size: 28px;
     font-weight: 300;
     line-height: 40px;
+    margin-right: 40px;
 }
 .why-thinkwyse .why-thinkwyse-inside .why-sections .why .three {
     width: 40%;
     font-size: 18px;
     font-weight: 300;
     line-height: 32px;
+
 }
 .why-button-container {
     margin-top: 75px;
