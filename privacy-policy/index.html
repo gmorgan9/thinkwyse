@@ -1,0 +1,1114 @@
+<!-- main index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkWyse</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/83cbcc9270.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="../assets/styles/main.css?v=1.10.1">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="main-container"> 
+
+        <!-- Top Container -->
+        <div class="top-container">
+            <nav>
+                <div class="nav-container">
+                    <a class="logo" href="/"><img src="../assets/images/think-wyse-bk.png" alt="" width="150"></a>
+
+
+
+
+                    <button onclick="toggleDropdown('productDropdown', this)" class="dropbtn">Product <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="productDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">overview</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Product overview &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i>
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">See all that ThinkWyse has to offer at a glance</p>
+                                </a>
+                                <a style="font-weight: 500;" href="#">See all features &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 35%;">
+                                <p class="column-header">key features</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#"><i class="bi bi-diagram-3"></i>&nbsp;&nbsp; Workflow Builder</a>
+                                        <a href="#"><i class="bi bi-signpost-split"></i>&nbsp;&nbsp; Timeline</a>
+                                        <a href="#"><i class="bi bi-node-plus"></i>&nbsp;&nbsp; App Integrations</a>
+                                        <a href="#"><i class="bi bi-kanban"></i>&nbsp;&nbsp; Boards</a>
+                                        <a href="#"><i class="bi bi-calendar4"></i>&nbsp;&nbsp; Calendar</a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#"><i class="bi bi-graph-up"></i>&nbsp;&nbsp; Reporting</a>
+                                        <a href="#"><i class="bi bi-layers"></i>&nbsp;&nbsp; Workload</a>
+                                        <a href="#"><i class="bi bi-lightbulb"></i>&nbsp;&nbsp; Goals</a>
+                                        <a href="#"><i class="bi bi-lightning-charge"></i>&nbsp;&nbsp; Automation</a>
+                                        <a href="#"><i class="bi bi-card-heading"></i>&nbsp;&nbsp; Forms</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleDropdown('solutionsDropdown', this)" class="dropbtn">Solutions <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="solutionsDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">teams</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                    <a href="#">Operations</a>
+                                    <a href="#">Marketing</a>
+                                    <a href="#">IT</a>
+                                    <a href="#">Leaders</a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 40%;">
+                                <p class="column-header">uses</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#">Project Management</a>
+                                        <a href="#">Task Management</a>
+                                        <a href="#">Strategic Management</a>
+                                        <a href="#">Campaign Management</a>
+                                        <a href="#">Creative Management</a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#">Agile Management</a>
+                                        <a href="#">Request Tracking</a>
+                                        <a href="#">Remote teams</a>
+                                        <a href="#">Productivity</a>
+                                        <a href="#"><span style="font-weight: 500;">View all uses</span> &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleDropdown('resourcesDropdown', this)" class="dropbtn">Resources <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="resourcesDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">learn</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Work Management Resources
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover best practices, watch webinars, get insights</p>
+                                </a>
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        ThinkWyse Guide
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get lots of tips, tricks, and advice to get the most from ThinkWyse</p>
+                                </a>
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Blog
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover the latest ThinkWyse product and company news</p>
+                                </a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 40%;">
+                                <p class="column-header">connect</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Events
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Find out about upcoming events near you</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Community Programs
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Connect with and learn from ThinkWyse customers around the world</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Support
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Need help? Contact the ThinkWyse support team</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Partners
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about our partner programs</p>
+                                        </a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Developers
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about building apps on the ThinkWyse platform</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                ThinkWyse for Nonprofits
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get more information on our nonprofit discount program, and apply.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                
+                    <a class="dropbtn" style="padding-left: 10px;" href="../pricing/">Pricing</a>
+
+                </div> <!-- end nav-container -->
+
+                <div class="right-side">
+                    <a class="dropbtn" href="#">Log In</a>
+                    <button class="get-started-button">Get Started</button>
+                </div>
+
+            </nav>
+        </div>
+        <!-- end Top Container -->
+    
+
+        <!-- Start Container -->
+        <div class="container">
+
+
+            <!-- Policy Section -->
+            <div class="policy-section">
+                <div class="policy-section-inside">
+                    <h2>Terms & Policies</h2>
+            
+                    <h3>
+                        ThinkWyse Privacy Policy
+                    </h3>
+            
+                    <p class="sub-text">Updated: August 18, 2023</p>
+                    <p class="sub-text">Effective: August 18, 2023</p>
+            
+                    <p class="policy-text">
+                        ThinkWyse offers a variety of team productivity, collaboration, and organizational tools available online, including via a mobile application (collectively, the “Service”), and websites, including but not limited to www.thinkwyse.com, app.thinkwyse.com, blog.thinkwyse.com (the “Websites”). As you use the Service and interact with the Websites, ThinkWyse collects and processes information from and about you in order to provide you with access to the Service, enhance your experience while using the Service, and interact with you. This Privacy Policy (the “Policy”) describes how ThinkWyse collects, uses, and discloses information collected through the Service and Websites, and what choices you have with respect to such information. The first section below explains which privacy terms are applicable to you depending on what type of user you are.
+                    </p>
+            
+                    <p class="policy-text">
+                        References to "<span class="policy-bold">ThinkWyse</span>" throughout the Policy mean the ThinkWyse entity that acts as the data controller or data processor of your information, as explained in more detail below. If you do not agree with this Policy, do not access or use the Service, Websites, or any other part of ThinkWyse's business.
+                    </p>
+            
+                    <p class="policy-text">
+                        If you have any questions about this Privacy Policy, please contact ThinkWyse at by emailing us at privacy@thinkwyse.com.
+                    </p>
+            
+                    <p class="policy-text">
+                        This Privacy Policy contains the following sections:
+                        <ul>
+                            <li class="policy-list-item"><a href="">What Type of User am I and What Privacy Terms are Applicable to Me?</a></li>
+                            <li class="policy-list-item"><a href="">Privacy Terms for Subscribers</a></li>
+                            <li class="policy-list-item"><a href="">Privacy Terms for Free Users</a></li>
+                            <li class="policy-list-item"><a href="">Privacy Terms for Site Visitors</a></li>
+                            <li class="policy-list-item"><a href="">Additional Privacy Terms for All Users</a></li>
+                            <li class="policy-list-item"><a href="">ThinkWyse Contact Info</a></li>
+                        </ul>
+                    </p>
+            
+                    <h4>
+                        I. What Type of User am I and Which Privacy Terms Are Applicable to Me?
+                    </h4>
+            
+                    <p class="policy-text">
+                        ThinkWyse has three different types of users depending on the ThinkWyse products used. Please see the bullets below to determine which type of user you are, and then click the internal link to visit the privacy terms applicable to you. It is possible that you may use ThinkWyse in different ways. If so, please review all applicable privacy terms. Also, don’t forget to review Section V, which contains privacy terms applicable to all users.
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Subscribers.</span> We call users who use the Service as part of any tier of a paid ThinkWyse subscription plan “Subscribers.” The Service features and functionalities available to Subscribers are determined by the specific terms agreed to between ThinkWyse and the organization (e.g., your employer or another entity or person, called the “Customer”) that entered into a separate agreement that governs delivery, access, and use of the Service (for purpose of this Policy, the “Customer Agreement”). The Customer controls its instance of the Service and is the data controller of the information collected through the Service about Subscribers, and ThinkWyse is a data processor of such information. To go directly to the terms applicable to Subscribers, please click here.
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Free Users.</span> We call users who use a non-paid version of the Service “Free Users.” While Free Users can access and use the Service, they have access to a more limited set of Service features and functionality than Subscribers. ThinkWyse is the data controller of the information collected through the Service about Free Users. To go directly to the terms applicable to Free Users, please click here.
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Site Visitors.</span> We call users of the Websites “Site Visitors.” Site Visitors can be individuals who are simply browsing the Websites but who do not use the ThinkWyse Service; or, Site Visitors can be Free Users or Subscribers who visit the Websites to seek additional information about ThinkWyse. ThinkWyse is the data controller of the information collected through the Website about Site Visitors. To go directly to the terms applicable to Site Visitors please click here.
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <h4>
+                        II. Privacy Terms for Subscribers
+                    </h4>
+            
+                    <p class="policy-text">
+                        <strong>A.	Overview</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Section II of this Policy applies only to Subscribers. If you are a Subscriber, the “Customer Agreement” governs the collection and processing of information collected from you through the Customer’s instance of the Service (e.g. a Customer's organization or workspace, but for purposes of this Policy referred to as the “Workspace”), including all associated messages, attachments, files, tasks, projects and project names, team names, channels, conversations, and other content submitted through the Service (“Workspace Content”). In the event of a conflict between this Privacy Policy and the Customer Agreement, the Customer Agreement governs. Because the Customer controls the Workspace used by Subscribers, if you have any questions about the Customer’s specific Workspace settings and privacy practices, please contact the Customer whose Workspace you use. If you are a Subscriber located in the European Union, please note that the Customer is the data controller with respect to the processing of your Workspace Content pursuant to the EU General Data Protection Regulation (“GDPR”). When processing Workspace Content of EU data subjects governed by the Customer Agreement, ThinkWyse is the data processor, meaning that we collect and process such information solely on behalf of the Customer.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>B. Collection and Use of Subscriber Information</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        This section explains the information we collect from Subscribers. We do not require Subscribers to provide us with information. However, certain information, such as account log-in data, is required to provide you with access to the Service, and other information may be collected automatically as you use the Service.
+            
+                        <ol>
+                            <li class="policy-list-item">
+                                Workspace Content. Workspace Content is collected, used, and shared by ThinkWyse in accordance with the Customer’s instructions, including any applicable terms in the Customer Agreement, or as required by applicable law. The Customer, and not ThinkWyse, determines its own, internal policies regarding storage, access, modification, deletion, sharing, and retention of Workspace Content which may apply to your use of the Service. For example, a Customer may provide or remove access to the Service, enable or disable third party integrations, manage permissions, retention and export settings, transfer or assign teams, or share projects. Please check with the Customer about the policies and settings that they have instituted with respect the Workspace Content that you provide when using the Service.
+                            </li>
+                            <li class="policy-list-item">
+                                Account Information. To set up your ThinkWyse account, you or the Customer will provide us with basic information about you which may include your name, address, telephone number, email address, and password. You will then have the ability to provide optional profile information, such as a photograph or basic demographic data. With your permission, we may also upload calendar information stored on your mobile device to your account. If you submit payment information in connection with your use of the Service, we utilize a third party credit card payment processing company to collect payment information, including your credit card number, billing address, and phone number. In such circumstances, the third party service provider, and not ThinkWyse, stores your payment information on our behalf.
+                            </li>
+                            <li class="policy-list-item">
+                                Service Usage Information. As you use the Service, we collect information about how you use and interact with the Service (“Service Usage Information”). Such information includes:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        Device information – when you access the Service using a mobile device, we collect certain device information, including the type of device you are using, its operating system, and mobile network information, which may include your mobile phone number. We may also collect your MAC address and other unique device identifiers.
+            
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Log files – when you use the Service, our servers automatically record information in server log files. These log files may include information such as your web request, IP address, browser type and settings, referring/exit pages and URLs, number of clicks, date and time stamp information, language preferences, data from cookies and similar technologies, and other such information.
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Location information – we collect and process general information about the location of the device from which you are accessing the Service (e.g., approximate geographic location inferred from an IP address).
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Workspace Use Metadata – when you interact with the Service, metadata is generated that provides high-level (non-content) information about the way you work in your Workspace. For example, we may log the number of Workspaces you work in; the number of tasks to which you are assigned; the features and embedded Service content you interact with; the types of files you share; and what, if any, third party services and integrations you use.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="policy-list-item">
+                                Other Information. You may provide us with information when you interact with us in other ways, such as when you submit requests or questions to us via forms or email (e.g., support forms, sales forms, user research participation forms); information you provide in connection with ThinkWyse sweepstakes, contests, or research studies in which you choose to participate; beta testing; and requests for customer support and technical assistance (collectively, “Other Information”).
+                            </li>
+                            <li class="policy-list-item">
+                                Information Collected from Third-Party Integrations. If you choose to use or connect to third-party integrations (e.g., OneDrive, Unito, Wufoo, Slack) through the Service, or if you are required or permitted to do so by a Customer, such third parties may allow us to have access to and store additional information about your interaction with those services as it relates to your use of the Service. If you initiate these connections, you also understand that we will share information about you that is required to enable your use of the third-party integration through the Service. If you do not wish to have this information shared, do not initiate these connections. By enabling these connections, you authorize us to connect and access the information provided through these connections, and you understand that the privacy policies of these third parties govern such connections.
+                            </li>
+                        </ol>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>C. How Does ThinkWyse Use Subscriber Information?</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        This section explains how ThinkWyse uses information collected from Subscribers.
+            
+                        <ol>
+                            <li class="policy-list-item">
+                                Workspace Content. ThinkWyse may view and use Workspace Content collected from and about Subscribers only as necessary:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        To maintain, provide and improve the Service
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        To prevent or address technical or security issues and resolve support requests
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        To investigate when we have a good faith belief, or have received a complaint alleging, that such Workspace Content is in violation of the Customer Agreement or our User Terms of Service
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        To comply with a valid legal subpoena, request, or other lawful process that meets the requirements of the Customer Agreement and our Law Enforcement Guidelines
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        As otherwise set forth in our Customer Agreement or as expressly permitted in writing by the Customer
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Account Information, Service Usage Information, Information from Third Party Integrations, and Other Information.</span> ThinkWyse may use these categories of information collected from and about Subscribers to:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        Maintain, provide, and improve the Service
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Respond to your requests for information
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Prevent or address technical or security issues and resolve support requests
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Investigate in good faith alleged violations of our <a href="">User Terms of Service</a>
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Comply with a valid legal subpoena, request, or other lawful process that meets the requirements of our <a href="">Law Enforcement Guidelines</a>
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Help us better understand user interests and needs, and customize the Service for our users
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Engage in analysis, research, and reports regarding use of the Service
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Protect the Service and our users
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Communicate with you via email and through the Service about important notices and updates regarding the Service, such as to inform you about changes in the Service, our service offerings, and important services-related notices, such as about security and fraud. Because these communications are an important part of the Service, you may not opt out of them
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        In accordance with applicable legal obligations, communicate with you about promotions, offers, and news about ThinkWyse. You have the ability to unsubscribe from such promotional communications
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Provide cross-device management of your account. For example, we may locate or try to locate the same unique users across multiple browsers or devices (such as smartphones or tablets), or work with service providers that do this, in order to save your preferences across devices and analyze usage of the Service. If you wish to opt out of the ability of one our service providers, Google Analytics, to locate you across devices in this way, you may install the Google Analytics Opt-out Browser Add-on by <a href="">clicking here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>D. Sharing of Subscriber Information</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        In accordance with the applicable Customer Agreement, we may share the information we collect from Subscribers as follows:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                Affiliates and Subsidiaries. We may share the information we collect within the ThinkWyse family of companies.
+                            </li>
+                            <li class="policy-list-item">
+                                Service Providers. We may provide access to or share your information with select third parties that use the information only to perform services on our behalf. These third parties provide a variety of services to us, including without limitation sales, marketing, provision of content and features, analytics, data storage, security, fraud prevention, and other services.
+                            </li>
+                            <li class="policy-list-item">
+                                Business Transactions. If the ownership of all or substantially all of our business changes, we may transfer your information to the new owner so that the Service can continue to operate. In such case, your information would remain subject to the promises and commitments contained in this Policy until such time as the acquiring party modifies it. If such transfer is subject to additional mandatory restrictions under applicable laws, ThinkWyse will comply with such restrictions.
+                            </li>
+                            <li class="policy-list-item">
+                                Consistent with your settings within the Service. Please note that the Workspace Content you submit through the Service may be viewable by other users in your Workspace and within your organization, depending on the specific settings you and your organization have selected.
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>E. Aggregate De-Identified Data</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We may aggregate and/or de-identify information collected through the Service so that such information can no longer be linked to you or your device (“Aggregate/De-Identified Information”). We may use Aggregate/De-Identified Information for any purpose, including without limitation for research and analytics, and may also share such data with any third parties, including partners, affiliates, services providers, and others.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>F. Combined Information</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We may combine the information that we collect through the Service with information that we receive from other sources, both online and offline, and use such combined information in accordance with this Policy and the Customer Agreement.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>G. Data Retention</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We will retain your information for the period necessary to fulfill the purposes outlined in this Policy unless a longer retention period is required or permitted by law, or where the Customer Agreement requires or permits specific retention or deletion periods.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>H. Data Subject Rights</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Please contact your Workspace owner(s) or administrator(s) to exercise any data subject rights you have under applicable local laws, including your ability to access, delete, rectify, transfer, or object under the GDPR.
+                    </p>
+            
+            
+                    <h4>
+                        III. Privacy Terms for Free Users
+                    </h4>
+            
+                    <p class="policy-text">
+                        <strong>A. Overview</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Section III of this Policy applies only to Free Users of the Service. If you are a Free User located in the European Union, ThinkWyse is the data controller with respect to the processing of your personal data pursuant to the GDPR.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>B. Collection and Use of Free User Information</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        This section explains how we collect, process, and use the information collected from Free Users. We do not require Free Users to provide us with information. However, certain information, such as account log-in data, is required to provide you with access to the Service, and other information may be collected automatically as discussed below.
+            
+                        <ol>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Information You Provide to ThinkWyse.</span> ThinkWyse collects the following information submitted directly through the Service by Free Users:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        The messages, attachments, files, tasks, project names, team names, channels, conversations, and other content submitted through the Service (collectively, the “<span class="policy-bold">Workspace Content</span>”);
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Information you provide as part of your account registration with ThinkWyse, which may include your name, organization name, address, telephone number, email address, username and password; optional information that you may choose to provide, such as a photograph or basic demographic data; and, with your permission, calendar information stored on your mobile device that you may elect to upload to your account (collectively, the “<span class="policy-bold">Account Information</span>”); and
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Information you provide in other interactions with us, such as requests or questions you submit to us via forms or email (e.g., support forms, sales forms, user research participation forms), information you provide in connection with ThinkWyse sweepstakes, contests, or research studies in which you choose to participate; beta testing; and requests for customer support and technical assistance (collectively, “<span class="policy-bold">Other Information</span>”).
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Service Usage Information.</span> As you use the Service, we collect a variety of information about how you use and interact with the Service (“Service Usage Information”). Such information includes:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        Device information – when you access the Service using a mobile device, we collect certain device information, including the type of device you are using, its operating system, and mobile network information, which may include your mobile phone number. We may also collect your MAC address and other unique device identifiers.
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Log files – when you use the Service, our servers automatically record certain information in server log files. These log files may include information such as your web request, IP address, browser type and settings, referring / exit pages and URLs, number of clicks, date and time stamp information, language preferences, data from cookies and similar technologies, and other such information.
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Location information – we collect and process general information about the location of the device from which you are accessing the Service (e.g., approximate geographic location inferred from an IP address).
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Workspace Use Metadata – when you interact with the Service, metadata is generated that provides high-level (non-content) information about the way you work in your Workspace. For example, we may log the number of Workspaces you work in; the number of tasks to which you are assigned; the features and embedded Service content you interact with; the types of files you share; and what, if any, third party services and integrations you use.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Information Collected from Third Party Integrations.</span> If you choose to use or connect to third-party integrations (e.g., OneDrive, Unito, Wufoo, Slack) through the Service, such third parties may allow us to have access to and store additional information about your interaction with those services as it relates to your use of the Service. Moreover, if you initiate these connections, you also understand that we will share information about you that is required to enable your use of the third-party integration through the Service. If you do not wish to have this information shared, do not initiate these connections. By enabling these connections, you authorize us to connect and access the information provided through these connections, and you understand that the privacy policies of these third parties govern such connections.
+                            </li>
+                            <li class="policy-list-item">
+                                <span class="policy-bold">Information Collected from Other Third Parties.</span> ThinkWyse may receive additional information about you, such as demographic information, from affiliates under common ownership and control, and from third parties, such as business partners, marketers, researchers, analysts, and other parties that we may use to supplement the information that we collect directly from you.
+                            </li>
+                        </ol>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>C. Use of Free User Information</strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        ThinkWyse may use the information collected from Free Users to:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                Maintain, provide, and improve the Service
+                            </li>
+                            <li class="policy-list-item">
+                                Respond to your requests for information
+                            </li>
+                            <li class="policy-list-item">
+                                Prevent or address technical or security issues and resolve support requests
+                            </li>
+                            <li class="policy-list-item">
+                                Investigate in good faith alleged violations of our <a href="">User Terms of Service</a>
+                            </li>
+                            <li class="policy-list-item">
+                                Comply with a valid legal subpoena, request, or other lawful process that meets the requirements of our <a href="">Law Enforcement Guidelines</a>
+                            </li>
+                            <li class="policy-list-item">
+                                Help us better understand user interests and needs, and customize the Service for our users
+                            </li>
+                            <li class="policy-list-item">
+                                Engage in analysis, research, and reports regarding use of the Service
+                            </li>
+                            <li class="policy-list-item">
+                                Protect the Service and our users
+                            </li>
+                            <li class="policy-list-item">
+                                Communicate with you via email and through the Service about important notices and updates regarding the Service, such as to inform you about changes in the Service, our service offerings, and important services-related notices, such as about security and fraud. Because these communications are an important part of the Service, you may not opt out of them
+                            </li>
+                            <li class="policy-list-item">
+                                In accordance with applicable legal obligations, communicate with you about promotions, offers, and news about ThinkWyse. You have the ability to unsubscribe from such promotional communications
+                            </li>
+                            <li class="policy-list-item">
+                                Provide cross-device management of your account. For example, we may locate or try to locate the same unique users across multiple browsers or devices (such as smartphones or tablets), or work with service providers that do this, in order to save your preferences across devices and analyze usage of the Service. If you wish to opt out of the ability of one our service providers, Google Analytics, to locate you across devices in this way, you may install the Google Analytics Opt-out Browser Add-on by <a href="">clicking here</a>
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            D. Legal Bases for Use of Your Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        If you are located in the EU, please note that the legal bases under the EU General Data Protection Regulation (“<span class="policy-bold">GDPR</span>”) for using the information we collect through your use of the Service as a Free User are as follows:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary to perform our obligations under a contract with you (for example, to comply with the <a href="">User Terms of Service</a> which you accept by using the Service)
+                            </li>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary for our legitimate interests or the legitimate interests of others (for example, to provide security for our Service; operate our Service; prevent fraud, analyze use of and improve our Service, and for similar purposes)
+                            </li>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary to comply with a legal obligation
+                            </li>
+                            <li class="policy-list-item">
+                                Where we have your consent to process data in a certain way
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            E. Sharing of Free User Information
+                        </strong>
+                    </p>
+                    
+                    <p class="policy-text">
+                        We share the information we collect through the Service about Free Users with the following:
+                        <ul>
+                            <li class="policy-list-item">
+                                Affiliates and Subsidiaries. We may share the information we collect within the ThinkWyse family of companies.
+                            </li>
+                            <li class="policy-list-item">
+                                Service Providers. We may provide access to or share your information with select third parties that use the information only to perform services on our behalf. These third parties provide a variety of services to us, including without limitation sales, marketing, provision of content and features, advertising, analytics, research, data storage, security, fraud prevention, and other services.
+                            </li>
+                            <li class="policy-list-item">
+                                Business Transfers. If the ownership of all or substantially all of our business changes, we may transfer your information to the new owner so that the Websites can continue to operate. In such case, your information would remain subject to the promises and commitments contained in this Policy until such time as this Policy is updated or amended by the acquiring party upon notice to you. If such transfer is subject to additional mandatory restrictions under applicable laws, ThinkWyse will comply with such restrictions.
+                            </li>
+                            <li class="policy-list-item">
+                                Consent. We may also disclose your information to third parties with your consent to do so.
+                            </li>
+                            <li class="policy-list-item">
+                                Consistent with your settings within the Service. Please note that the Workspace Content you submit through the Service may be viewable by other users in your Workspace, depending on the specific settings you have selected.
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            F. Aggregate De-Identified Data
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We may aggregate and/or de-identify information collected through the Service so that such information can no longer be linked to you or your device (“Aggregate/De-Identified Information”). We may use Aggregate/De-Identified Information for any purpose, including without limitation for research and marketing purposes, and may also share such data with any third parties, including advertisers, promotional partners, sponsors, event promoters, and/or others.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            G. Combined Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        For the purposes discussed in this Policy, we may combine the information that we collect through the Service with information that we receive from other sources, both online and offline, and use such combined information in accordance with this Policy.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            H. Data Retention
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We will retain your information for the period necessary to fulfill the purposes outlined in this Policy unless a longer retention period is required or permitted by law.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            I. Data Subject Rights
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Local legal requirements (such as those in the EU) may afford you additional rights. If you would like further information in relation to your legal rights under applicable law or would like to exercise any of them, please contact us at any time using this form. Your local laws (such as those in the EU) may permit you to request that we:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                provide access to and/or a copy of certain information we hold about you
+                            </li>
+                            <li class="policy-list-item">
+                                prevent the processing of your information for direct-marketing purposes (including any direct marketing processing based on profiling)
+                            </li>
+                            <li class="policy-list-item">
+                                update information which is out of date or incorrect
+                            </li>
+                            <li class="policy-list-item">
+                                delete certain information which we are holding about you
+                            </li>
+                            <li class="policy-list-item">
+                                restrict the way that we process and disclose certain of your information
+                            </li>
+                            <li class="policy-list-item">
+                                transfer your information to a third party provider of services
+                            </li>
+                            <li class="policy-list-item">
+                                revoke your consent for the processing of your information
+                            </li>
+                        </ul>
+            
+                        We will consider all requests and provide our response within the time period stated by applicable law. Please note, however, that certain information may be exempt from such requests in some circumstances, which may include if we need to keep processing your information for our legitimate interests or to comply with a legal obligation. We may request you provide us with information necessary to confirm your identity before responding to your request.
+                    </p>
+            
+                    <h4>
+                        IV. Privacy Terms for Site Visitors
+                    </h4>
+            
+                    <p class="policy-test">
+                        <strong>
+                            A. Overview
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Section IV of this Policy applies only to Site Visitors. If you visit the Websites, regardless of whether you are also a user of the Service, the following rules apply to you. To eliminate any confusion, please note that the terms in this section apply only to use of ThinkWyse’s Websites, not to use of the Service. If you are a Site Visitor located in the European Union, ThinkWyse is the data controller with respect to the processing of your personal data pursuant to the EU General Data Protection Regulation (“<span class="policy-bold">GDPR</span>”).
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            B. Collection and Use of Site Visitor Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        <ol>
+                            <li class="policy-list-item">
+                                Information Collected from Site Visitors
+                                <br>
+                                When you use the Websites, we collect the following information about you:
+                            </li>
+                            <ul>
+                                <li class="policy-list-item-disk">
+                                    Contact Information – if you submit a request for information or a question through the Websites, you may be asked to provide us with basic information including your name, email address, phone number, and postal address. We will also keep records of the communication, the question/request you raised, and how it was resolved. If you choose to participate in an ThinkWyse sweepstakes, contest, or research study offered through the Websites, we will also collect basic contact information from you in connection with such activity.
+                                </li>
+                                <li class="policy-list-item-disk">
+                                    Websites Usage Information – as you browse the Websites, we and our service providers (which are third party companies that work on our behalf to provide and enhance the Websites) use a variety of technologies, including cookies and similar tools, to assist in collecting information about how you use the Websites. For example, our servers automatically record certain information in server logs. These server logs may include information such as your web request, IP address, browser type and settings, referring / exit pages and URLs, number of clicks and how you interact with links on the Websites, domain names, landing pages, pages viewed, mobile carrier, mobile device identifiers and information about the device you are using to access the Websites, date and time stamp information and other such information.
+                                </li>
+                                <li class="policy-list-item-disk">
+                                    Location Information – We collect and process general information about the location of the device from which you are accessing the Service (e.g., approximate geographic location inferred from an IP address).
+                                </li>
+                            </ul>
+                            <li class="policy-list-item">
+                                Cookies and Similar Technologies
+            
+                                <p class="policy-text">
+                                    To collect the Websites Usage Information discussed above, we and our service providers use Internet server logs, cookies, tags, SDKs, tracking pixels, and other similar tracking technologies. A web server log is a file where website activity is stored. An SDK is a section of code that we embed in our applications and software to allow third parties to collect information about how users interact with the Websites. A cookie is a small text file that is placed on your computer or mobile device when you visit a site, that enables us to: (i) recognize your computer and login session; (ii) store your preferences and settings; (iii) understand which pages of the Websites you have visited; (iv), enhance your user experience by delivering and measuring the effectiveness of content and advertising tailored to your interests; (v) perform analytics; and (vi) assist with security and administrative functions. Tracking pixels (sometimes referred to as web beacons or clear GIFs) are tiny electronic tags with a unique identifier embedded in websites, online ads and/or email, and that are designed to provide usage information like ad impressions or clicks, email open rates, measure popularity of the Websites and associated advertising, and to access user cookies. As we adopt additional technologies, we may also gather information through other methods. Please note that you can change your settings to notify you when a cookie is being set or updated, or to block cookies altogether. Please consult the “Help” section of your browser for more information (e.g., Internet Explorer; Google Chrome; Mozilla Firefox; or Apple Safari).
+                                </p>
+                            </li>
+                            <li class="policy-list-item">
+                                Use of Information Collected from Site Visitors
+                                <br>
+                                We use the information collected from Site Visitors for a variety of purposes including to:
+                                <ul>
+                                    <li class="policy-list-item-disk">
+                                        Maintain, provide, and improve the Websites and the Service
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Respond to your requests for information
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        In accordance with applicable legal obligations, communicate with you about promotions, offers, and news about ThinkWyse. You have the ability to unsubscribe from such promotional communications
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Prevent or address technical or security issues
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Investigate in good faith alleged violations of our <a href="">User Terms of Service</a>
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Help us better understand Site Visitor interests and needs, and customize the advertising and content you see on the Websites
+                                    </li>
+                                    <li class="policy-list-item-disk">
+                                        Engage in analysis and research regarding use of the Websites and the Service
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            C. Legal Bases
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        If you are located in the EU, please note that the legal bases under the GDPR for using the information we collect through your use of the Websites as a Site Visitor are as follows:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary to perform our obligations under a contract with you (for example, to comply with the <a href="">User Terms of Service</a> which you accept by browsing the Websites)
+                            </li>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary for our legitimate interests or the legitimate interests of others (for example, to provide security for our Websites; operate our Websites; prevent fraud, analyze use of and improve our Websites, and for similar purposes)
+                            </li>
+                            <li class="policy-list-item">
+                                Where use of your information is necessary to comply with a legal obligation
+                            </li>
+                            <li class="policy-list-item">
+                                Where we have your consent to process data in a certain way
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            D. Aggregate/De-Identified Data
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We may aggregate and/or de-identify information collected through the Websites so that such information can no longer be linked to you or your device (“Aggregate/De-Identified Information”). We may use Aggregate/De-Identified Information for any purpose, including without limitation for research and marketing purposes, and may also share such data with any third parties, including advertisers, promotional partners, sponsors, event promoters, and/or others.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            E. Combined Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        You agree that, for the purposes discussed in this Policy, we may combine the information that we collect through the Websites with information that we receive from other sources, both online and offline, and use such combined information in accordance with this Policy. If, however, the collection of any information about you is governed by a Customer Agreement, information will only be combined and used in accordance with such Customer Agreement and the sections of this Policy applicable to Subscribers.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            F. Website Analytics and Advertising
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        <ol>
+                            <li class="policy-list-item">
+                                Website Analytics
+                                <p class="policy-text">
+                                    We may use third-party web analytics services on our Websites to collect and analyze usage information through cookies and similar tools; engage in auditing, research, or reporting; and provide certain features to you. To prevent Google Analytics from using your information for analytics, you may install the Google Analytics Opt-out Browser Add-on by <a href="">clicking here.</a>
+                                </p>
+                            </li>
+                            <li class="policy-list-item">
+                                Online Advertising
+                                <p class="policy-text">
+                                    The Websites may integrate third-party advertising technologies that allow for the delivery of relevant content and advertising on the Websites, as well as on other websites you visit. The ads may be based on various factors such as the content of the page you are visiting, information you enter such as your age and gender, your searches, demographic data, and other information we collect from you. These ads may be based on your current activity or your activity over time and across other websites and online services and may be tailored to your interests.
+                                </p>
+                                <p class="policy-text">
+                                    Third parties, whose products or services are accessible or advertised via the Websites, may also place cookies or other tracking technologies on your computer, mobile phone, or other device to collect information about you as discussed above. We also allow other third parties (e.g., ad networks and ad servers such as Google Analytics, DoubleClick and others) to serve tailored ads to you on our Websites and other websites and to access their own cookies or other tracking technologies on your computer, mobile phone, or other device you use to access the Websites. We sometimes provide Site Visitor information (such as email addresses) to service providers, who may “match” this information in de-identified form to cookies (or mobile ad identifiers) and other proprietary IDs, in order to provide you with more relevant ads when you visit other websites.
+                                </p>
+                                <p class="policy-text">
+                                    We neither have access to, nor does this Policy govern, the use of cookies or other tracking technologies that may be placed on your device you use to access the Websites by such non-affiliated third parties. If you are interested in more information about tailored browser advertising and how you can generally control cookies from being put on your computer to deliver tailored advertising, you may visit the <a href="">Network Advertising Initiative’s Consumer Opt-Out link</a>, the <a href="">Digital Advertising Alliance’s Consumer Opt-Out link</a>, or <a href="">Your Online Choices</a> to opt-out of receiving tailored advertising from companies that participate in those programs. To opt out of Google Analytics for display advertising or customize Google display network ads, visit the <a href="">Google Ads Settings</a> page. We do not control these opt-out links or whether any particular company chooses to participate in these opt-out programs. We are not responsible for any choices you make using these mechanisms or the continued availability or accuracy of these mechanisms.
+                                </p>
+                                <p class="policy-text">
+                                    Please note that if you exercise the opt-out choices above, you will still see advertising when you use the Websites, but it will not be tailored to you based on your online behavior over time.
+                                </p>
+                            </li>
+                            <li class="policy-list-item">
+                                Notice Concerning Do Not Track Do Not Track (“DNT”) is a privacy preference that users can set in certain web browsers. We are committed to providing you with meaningful choices about the information collected on our Websites for third party purposes, and that is why we provide the variety of opt-out mechanisms listed above. However, we do not currently recognize or respond to browser-initiated DNT signals. To learn more about Do Not Track, you can do so <a href="">here</a>.
+                            </li>
+                        </ol>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            G. Sharing of Site Visitor Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We share the information we collect through the Websites with the following:
+                        <ul>
+                            <li class="policy-list-item">
+                                Affiliates and Subsidiaries. We may share the information we collect within the ThinkWyse family of companies.
+                            </li>
+                            <li class="policy-list-item">
+                                Service Providers. We may provide access to or share your information with select third parties that use the information only to perform services on our behalf. These third parties provide a variety of services to us, including without limitation sales, marketing, provision of content and features, advertising, analytics, research, data storage, security, fraud prevention, and other services.
+                            </li>
+                            <li class="policy-list-item">
+                                Business Transfers. If the ownership of all or substantially all of our business changes, we may transfer your information to the new owner so that the Websites can continue to operate. In such case, your information would remain subject to the promises and commitments contained in this Policy until such time as this Policy is updated or amended by the acquiring party upon notice to you. If such transfer is subject to additional mandatory restrictions under applicable laws, ThinkWyse will comply with such restrictions.
+                            </li>
+                            <li class="policy-list-item">
+                                Public Forums. The Websites makes it possible for you to upload and share comments or feedback publicly with other users, such as on the ThinkWyse community forum. Any information that you submit through such public features is not confidential, and ThinkWyse may use it for any purpose (including in testimonials or other ThinkWyse marketing materials). Any information you post openly in these ways will be available to the public at large and potentially accessible through third-party search engines. Such information can be read, collected and/or used by other users, and it could be used to send you unsolicited messages. Accordingly, please take care when using these features of the Websites.
+                            </li>
+                            <li class="policy-list-item">
+                                Consent. We may also disclose your information to third parties with your consent to do so.
+                            </li>
+                        </ul>
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            H. Retention of Your Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We will retain your information for the period necessary to fulfill the purposes outlined in this Policy unless a longer retention period is required or permitted by law.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            I. Data Subject Rights
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        Local legal requirements (such as those in the EU) may afford you additional rights. If you would like further information in relation to your legal rights under applicable law or would like to exercise any of them, please contact us at any time using <a href="">this form</a>. Your local laws (such as those in the EU) may permit you to request that we:
+            
+                        <ul>
+                            <li class="policy-list-item">
+                                provide access to and/or a copy of certain information we hold about you
+                            </li>
+                            <li class="policy-list-item">
+                                prevent the processing of your information for direct-marketing purposes (including any direct marketing processing based on profiling)
+                            </li>
+                            <li class="policy-list-item">
+                                update information which is out of date or incorrect
+                            </li>
+                            <li class="policy-list-item">
+                                delete certain information which we are holding about you
+                            </li>
+                            <li class="policy-list-item">
+                                restrict the way that we process and disclose certain of your information
+                            </li>
+                            <li class="policy-list-item">
+                                transfer your information to a third party provider of services
+                            </li>
+                            <li class="policy-list-item">
+                                revoke your consent for the processing of your information
+                            </li>
+                        </ul>
+            
+                        We will consider all requests and provide our response within the time period stated by applicable law. Please note, however, that certain information may be exempt from such requests in some circumstances, which may include if we need to keep processing your information for our legitimate interests or to comply with a legal obligation. We may request you provide us with information necessary to confirm your identity before responding to your request.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            J. Third Party Links And Services
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        The Websites may contain links to third-party websites and functionalities. If you choose to use these third party services, you may disclose your information not just to those third-parties, but also to their users and the public more generally depending on how their services function. Because these third-party websites and services are not operated by ThinkWyse, ThinkWyse is not responsible for the content or practices of those websites or services. The collection, use, and disclosure of your information will be subject to the privacy policies of the third party websites or services, and not this Policy. We urge you to read the privacy and security policies of these third-parties.
+                    </p>
+            
+                    <h4>
+                        V. Additional Privacy Terms for All Users
+                    </h4>
+            
+                    <p class="policy-text">
+                        The following additional information about ThinkWyse’s privacy practices apply to all users of ThinkWyse (Subscribers, Free Users, and Site Visitors).
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            A. International Users
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        ThinkWyse complies with the EU-US Privacy Shield Framework and the Swiss-US Privacy Shield Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal data from the European Union and Switzerland to the United States, respectively. ThinkWyse has certified to the Department of Commerce that it adheres to the Privacy Shield Principles of Notice, Choice, Accountability for Onward Transfer, Security, Data Integrity and Purpose Limitation, Access and Recourse, Enforcement and Liability. If there is any conflict between the policies in this Policy and the Privacy Shield Principles, the Privacy Shield Principles shall govern. To learn more about the Privacy Shield program, and to view our certification page, please visit <a href="https://www.privacyshield.gov/">https://www.privacyshield.gov/</a>. In compliance with the EU-US Privacy Shield and Swiss-US Privacy Shield Principles, ThinkWyse commits to resolve complaints about your privacy and our collection or use of your personal data. European Union or Swiss citizens with inquiries or complaints regarding this privacy policy should first contact ThinkWyse at: <a href="mailto:privacy@thinkwyse.com"></a>privacy@thinkwyse.com. ThinkWyse has further committed to refer unresolved privacy complaints under the EU-US and Swiss-US Privacy Shield Principles to an independent dispute resolution mechanism, the BBB EU Privacy Shield, operated by the Council of Better Business Bureaus. If you do not receive timely acknowledgment of your complaint, or if your complaint is not satisfactorily addressed by ThinkWyse, please visit the BBB EU Privacy Shield web site at <a href="https://www.bbb.org/EU-privacy-shield/for-eu-consumers/">https://www.bbb.org/EU-privacy-shield/for-eu-consumers/</a> for more information and to file a complaint. Please note that if your complaint is not resolved through these channels, under limited circumstances, a binding arbitration option may be available before a Privacy Shield Panel. ThinkWyse is subject to the investigatory and enforcement powers of the Federal Trade Commission (FTC) with respect to its compliance with the provisions of the EU-US and Swiss-US Privacy Shield.
+                    </p>
+            
+                    <p class="policy-text">
+                        We may transfer information that we collect about you to third party processors across borders and from your country or jurisdiction to other countries or jurisdictions around the world. If you are located in the European Union or other regions with laws governing data collection and use that may differ from U.S. law, please note that you are transferring information to a country and jurisdiction that does not have the same data protection laws as your jurisdiction. ThinkWyse will take reasonable and appropriate steps necessary to ensure that any third party who is acting as a “data processor” under EU and Swiss terminology is processing the personal data we entrust to them in a manner that is consistent with the EU-US and Swiss-US Privacy Shield Principles. ThinkWyse is potentially liable in cases of onward transfer to third parties of data of EU and Swiss individuals received pursuant to the EU-US and Swiss-US Privacy Shield, respectively.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            B. Changes To Our Privacy Policy
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        We reserve the right to amend this Policy at any time to reflect changes in the law, our data collection and use practices, the features of our Service or Websites, or advances in technology. We will make the revised Policy accessible through the Service and Websites, so you should review the Policy periodically. If we make a material change to the Policy, we will comply with applicable legal requirements regarding providing you with notice and/or consent.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            C. How We Protect Your Information
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        ThinkWyse takes technical and organizational measures to protect your information against accidental or unlawful destruction or accidental loss, alteration, unauthorized disclosure or access. However, no method of transmission over the Internet, and no means of electronic or physical storage, is absolutely secure, and thus we cannot ensure or warrant the security of that information.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            D. Marketing Practices and Choices
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        If you receive email from us, we may use certain analytics tools, such as clear GIFs, to capture data such as when you open our message or click on any links or banners our email contains. This data allows us to gauge the effectiveness of our communications and marketing campaigns. You may instruct us not to use your contact information to contact you by email, postal mail, or phone regarding products, services, promotions and special events that might appeal to your interests by contacting us at the “ThinkWyse Contact Info” section below. In commercial email messages, you can also opt out by following the instructions located at the bottom of such emails. Please note that, regardless of your request, we may still use and share certain information as permitted by this Policy or as required by applicable law. For example, you may not opt out of certain operational or service-related emails, such as those reflecting our relationship or transactions with you.
+                    </p>
+            
+                    <p class="policy-text">
+                        <strong>
+                            E. California Privacy Rights
+                        </strong>
+                    </p>
+            
+                    <p class="policy-text">
+                        California law gives residents of California the right under certain circumstances to request information from us regarding the manner in which we share certain categories of personal information (as defined by applicable California law) with third parties for their direct marketing purposes. However, ThinkWyse does not share your personal information with third parties for their own direct marketing purposes.
+                    </p>
+            
+                    <h4>
+                        VI. ThinkWyse Contact Info
+                    </h4>
+            
+                    <p class="policy-text">
+                        ThinkWyse is located remotely. If you wish to contact us or have any questions about or complaints in relation to this Policy, please contact us at privacy@thinkwyse.com.
+                    </p>
+            
+                </div>
+            </div>
+            <!-- end Policy Section -->
+            
+            <!-- link-footer -->
+            <div class="link-footer">
+                <div class="link-footer-top">
+                    <div class="link-footer-top-logo">
+                        <img src="../assets/images/think-wyse-small.png" alt="">
+                    </div>
+                    <h1>
+                        Achieve excellence in your work with ThinkWyse
+                    </h1>
+                    <p>
+                        Experience the top-rated software in project and product management
+                    </p>
+                    <div class="link-footer-top-button-container">
+                        <button class="tab-content-button">Get Started</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="link-footer-bottom">
+                    <div class="footer-column">
+                        <div class="link-footer-bottom-logo">
+                            <a href="/"><img src="../assets/images/think-wyse-small.png" alt="" width="50"></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>ThinkWyse</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Customer Success</a></li>
+                            <li><a href="#">ThinkWyse Templates</a></li>
+                            <li><a href="#">Trust & Security</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Diversity</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Wavelength</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Workflow Solutions</h4>
+                        <ul>
+                            <li><a href="#">Project Management</a></li>
+                            <li><a href="#">Goal Management</a></li>
+                            <li><a href="#">Agile Management</a></li>
+                            <li><a href="#">Task Management</a></li>
+                            <li><a href="#">Increase Productivity</a></li>
+                            <li><a href="#">Work Management</a></li>
+                            <li><a href="#">Project Planning</a></li>
+                            <li><a href="#">To Do Lists</a></li>
+                            <li><a href="#">See all Uses</a></li>
+                            <li><a href="#">See All Teams</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">ThinkWyse Guide</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">App Directory</a></li>
+                            <li><a href="#">Developers & API</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">ThinkWyse Community</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">ThinkWyse for Nonprofits</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="#">11 Leadership Styles</a></li>
+                            <li><a href="#">110 Icebreaker Questions</a></li>
+                            <li><a href="#">Executive Summary Tips</a></li>
+                            <li><a href="#">Imposter Syndrome Tips</a></li>
+                            <li><a href="#">Prevent Team Burnout</a></li>
+                            <li><a href="#">SWOT Analysis Tips</a></li>
+                            <li><a href="#">What are OKRs?</a></li>
+                            <li><a href="#">What are SMART Goals?</a></li>
+                            <li><a href="#">What is Scope Creep?</a></li>
+                            <li><a href="#">See All Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <!-- end link-footer -->
+
+            <!-- Main Footer -->
+            <div class="main-footer">
+                <div class="main-footer-inside">
+                    <div class="footer-section">
+                        <p>&copy; 2023 ThinkWyse, Inc. All rights reserved.</p>
+                    </div>
+                    <div class="footer-section">
+                        <ul class="footer-links">
+                            <li><a href="/terms-of-service/">Terms</a> & <a href="/privacy-policy/">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- end Main Footer -->
+
+        </div>
+        <!-- End Container -->
+    
+
+    </div> 
+    <!-- main container -->
+
+    <script src="../assets/scripts/dropdown.js"></script>
+    <script src="../assets/scripts/top-scroll.js"></script>
+    <script src="../assets/scripts/scrolloverlay.js"></script>
+    <script src="../assets/scripts/tab-section.js"></script>
+
+    
+</body>
+</html>

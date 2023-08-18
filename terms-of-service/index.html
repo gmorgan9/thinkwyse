@@ -1,0 +1,660 @@
+<!-- main index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkWyse</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/83cbcc9270.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="../assets/styles/main.css?v=1.10.1">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="main-container"> 
+
+        <!-- Top Container -->
+        <div class="top-container">
+            <nav>
+                <div class="nav-container">
+                    <a class="logo" href="/"><img src="../assets/images/think-wyse-bk.png" alt="" width="150"></a>
+
+
+
+
+                    <button onclick="toggleDropdown('productDropdown', this)" class="dropbtn">Product <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="productDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">overview</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Product overview &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i>
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">See all that ThinkWyse has to offer at a glance</p>
+                                </a>
+                                <a style="font-weight: 500;" href="#">See all features &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 35%;">
+                                <p class="column-header">key features</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#"><i class="bi bi-diagram-3"></i>&nbsp;&nbsp; Workflow Builder</a>
+                                        <a href="#"><i class="bi bi-signpost-split"></i>&nbsp;&nbsp; Timeline</a>
+                                        <a href="#"><i class="bi bi-node-plus"></i>&nbsp;&nbsp; App Integrations</a>
+                                        <a href="#"><i class="bi bi-kanban"></i>&nbsp;&nbsp; Boards</a>
+                                        <a href="#"><i class="bi bi-calendar4"></i>&nbsp;&nbsp; Calendar</a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#"><i class="bi bi-graph-up"></i>&nbsp;&nbsp; Reporting</a>
+                                        <a href="#"><i class="bi bi-layers"></i>&nbsp;&nbsp; Workload</a>
+                                        <a href="#"><i class="bi bi-lightbulb"></i>&nbsp;&nbsp; Goals</a>
+                                        <a href="#"><i class="bi bi-lightning-charge"></i>&nbsp;&nbsp; Automation</a>
+                                        <a href="#"><i class="bi bi-card-heading"></i>&nbsp;&nbsp; Forms</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleDropdown('solutionsDropdown', this)" class="dropbtn">Solutions <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="solutionsDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">teams</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                    <a href="#">Operations</a>
+                                    <a href="#">Marketing</a>
+                                    <a href="#">IT</a>
+                                    <a href="#">Leaders</a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 40%;">
+                                <p class="column-header">uses</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#">Project Management</a>
+                                        <a href="#">Task Management</a>
+                                        <a href="#">Strategic Management</a>
+                                        <a href="#">Campaign Management</a>
+                                        <a href="#">Creative Management</a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#">Agile Management</a>
+                                        <a href="#">Request Tracking</a>
+                                        <a href="#">Remote teams</a>
+                                        <a href="#">Productivity</a>
+                                        <a href="#"><span style="font-weight: 500;">View all uses</span> &nbsp;&nbsp;<i class="bi bi-arrow-right" style="color: rgb(200, 200, 200)"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleDropdown('resourcesDropdown', this)" class="dropbtn">Resources <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
+                    <div id="resourcesDropdown" class="dropdown-content">
+                        <div class="dropdown-columns">
+
+                            <div class="dropdown-column" style="width: 20%;">
+                                <p class="column-header">learn</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Work Management Resources
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover best practices, watch webinars, get insights</p>
+                                </a>
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        ThinkWyse Guide
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get lots of tips, tricks, and advice to get the most from ThinkWyse</p>
+                                </a>
+                                <a href="#">
+                                    <div class="head" style="font-weight: 500;">
+                                        Blog
+                                    </div>
+                                    <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Discover the latest ThinkWyse product and company news</p>
+                                </a>
+                            </div>
+
+                            <div class="dropdown-column" style="width: 40%;">
+                                <p class="column-header">connect</p>
+                                <hr style="width: 97%; margin-bottom: 10px;">
+                                <div class="sub-columns-container" style="display: flex; justify-content:safe;">
+                                    <div class="sub-column" style="margin-right: 50px;">
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Events
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Find out about upcoming events near you</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Community Programs
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Connect with and learn from ThinkWyse customers around the world</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Support
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Need help? Contact the ThinkWyse support team</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Partners
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about our partner programs</p>
+                                        </a>
+                                    </div>
+                                    <div class="sub-column">
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                Developers
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Learn more about building apps on the ThinkWyse platform</p>
+                                        </a>
+                                        <a href="#">
+                                            <div class="head" style="font-weight: 500;">
+                                                ThinkWyse for Nonprofits
+                                            </div>
+                                            <p style="font-size: 14px; margin-top: 10px; color: rgb(69, 69, 69);">Get more information on our nonprofit discount program, and apply.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                
+                    <a class="dropbtn" style="padding-left: 10px;" href="../pricing/">Pricing</a>
+
+                </div> <!-- end nav-container -->
+
+                <div class="right-side">
+                    <a class="dropbtn" href="#">Log In</a>
+                    <button class="get-started-button">Get Started</button>
+                </div>
+
+            </nav>
+        </div>
+        <!-- end Top Container -->
+    
+
+        <!-- Start Container -->
+        <div class="container">
+
+
+            <!-- Policy Section -->
+            <div class="policy-section">
+                <div class="policy-section-inside">
+                    <h2>Terms & Policies</h2>
+                
+                    <h3>
+                        ThinkWyse User Terms of Service
+                    </h3>
+                
+                    <p class="sub-text">Updated: August 18, 2023</p>
+                    <p class="sub-text">Effective: August 18, 2023</p>
+                
+                    <p class="policy-text">
+                        ThinkWyse, Inc. (“ThinkWyse,” “we,” “our,” “us”) offers a variety of team productivity, collaboration, and organizational tools, as further described in the ThinkWyse Guide and its Release Notes (collectively, the “Service”), and websites, including but not limited to www.thinkwyse.com, app.thinkwyse.com, blog.thinkwyse.com (the “Websites”).
+                    </p>
+                
+                    <p class="policy-text">
+                        These User Terms of Service (“Terms”) are a binding legal contract between you and ThinkWyse and explain the rules governing your use of our Service and Websites. These Terms apply to you as a user of the Service, subject to exceptions that apply to Authorized Users (as defined and further detailed below in the section titled “How These Terms Apply; Users and Customers”). By accessing or using the Service and Websites, you acknowledge and agree to be bound by these Terms (as applicable) and confirm you have read and understand our Privacy Statement, which is incorporated by reference.
+                    </p>
+                
+                    <p class="policy-text">
+                        If you do not agree to these Terms, please do not access or use the Service or Websites.
+                    </p>
+                
+                    <p class="policy-text">
+                        We may revise these Terms from time to time by posting a modified version on our website. If, in ThinkWyse’s sole discretion, the modifications to these Terms are material, we will provide you with reasonable notice prior to the change taking effect, either by emailing the email address associated with your account or by alerting you through the Service and/or Websites. If you do not agree to or cannot comply with the modified Terms, you must stop using the Service and Websites. Unless otherwise stated elsewhere in these Terms or in our notice, the updated Terms will take effect upon their posting and will apply on a going-forward basis. Your continued use of the Service and Websites after any update to these Terms constitutes your acceptance of such changes.
+                    </p>
+                
+                    <h4>
+                        HOW THESE TERMS APPLY; USERS AND CUSTOMERS
+                    </h4>
+                
+                    <p class="policy-text">
+                        By using ThinkWyse, you fall into one or more of the following three different categories of ThinkWyse user:
+
+                        <ul>
+                            <li class="policy-list-item">
+                                “<span class="policy-bold">Site Visitors</span>” are users of the Websites.
+                            </li>
+                            <li class="policy-list-item">
+                                “<span class="policy-bold">Free Users</span>” use the free/basic version of the Service. Free Users have access to a more limited set of Service features and functionality than Authorized Users. Free users may have their own individual workspaces and/or take part in a free multi-user ThinkWyse domain.
+                            </li>
+                            <li class="policy-list-item">
+                                “<span class="policy-bold">Authorized Users</span>” use the Service as part of any paid ThinkWyse subscription plan purchased by a person or entity (the “<span class="policy-bold">Customer</span>”) who has separately entered into a written agreement with ThinkWyse (the “<span class="policy-bold">Customer Agreement</span>”) governing the access and use of the Service and permitting that Customer to create and configure ThinkWyse so that Authorized Users may join.
+                            </li>
+                        </ul>
+                    </p>
+                
+                    <p class="policy-text">
+                        To the extent you are an Authorized User, only the following sections of these Terms will apply to you: “A Few Initial Matters” and “How These Terms Apply; Users and Customers”.
+                    </p>
+                
+                    <p class="policy-text">
+                        As an Authorized User, you gain access to the Service through a Customer of ThinkWyse. For example, if you are joining your employer’s organization, Customer is your employer. If you are joining a workspace created by your friend using a personal email address, your friend is the ThinkWyse Customer and is authorizing you to join his or her workspace. The Customer Agreement governs our relationship and commitment to deliver the Service to Customer, who may then invite Authorized Users to join their ThinkWyse. When you or another Authorized User submits content or information to the Service, such as messages or files (“<span class="policy-bold">Customer Data</span>”), you acknowledge and agree that, as between ThinkWyse and Customer, the Customer Data is controlled by Customer and the Customer Agreement provides Customer with choices and control over that Customer Data. For example, Customer may manage permissions, enable or disable third party integrations, or take steps to expand, consolidate or share the contents of ThinkWyse portfolios, projects, tasks and subtasks, and these choices and instructions may result in the access, use, disclosure, modification or deletion of certain or all Customer Data.
+                    </p>
+                
+                    <p class="policy-text policy-uppercase">
+                        as between ThinkWyse and customer, you acknowledge and agree that it is solely customer’s responsibility to (a) inform you and any other authorized users of any relevant customer policies, practices and settings that may impact the processing of customer data; (b) obtain any rights, permissions or consents from you and any other authorized users that are necessary for the lawful use of customer data and the operation of the service; (c) ensure that the transfer and processing of customer data under the customer agreement is lawful; and (d) respond to and resolve any dispute with you and any other authorized users relating to customer data, the service or customer’s failure to fulfill these obligations. in your capacity as an authorized user, ThinkWyse makes no representations or warranties of any kind (whether express or implied) to you relating to the service, which is provided to you on an “as is” and “as available” basis.
+                    </p>
+                
+                    <h4>
+                        ELIGIBILITY AND SCOPE
+                    </h4>
+                
+                    <p class="policy-text">
+                        To use the Service and Websites you must be, and you represent and warrant that you are, at least 16 years of age and competent to agree to these Terms. If the law where you reside requires that you must be older in order for ThinkWyse to lawfully provide the Service and Websites to you and use your personal data without parental consent, then you must be that older age.
+                    </p>
+                
+                    <p class="policy-text">
+                        If the representations in the preceding sentence are not true, or if ThinkWyse has previously prohibited you from accessing or using the Service and Websites, you may not access or use the Service and Websites.
+                    </p>
+                
+                    <h4>
+                        ACCOUNT REGISTRATION AND USE
+                    </h4>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Account Registration and Confidentiality.</span> To access the Service and Websites, you must register for an ThinkWyse account by creating a username and password. You agree to provide us with accurate, complete, and current registration information about yourself. It is your responsibility to ensure that your password remains confidential and secure. By registering, you agree that you are fully responsible for all activities that occur under your user name and password. We may assume that any communications we receive under your account have been made by you. If you are a workspace or organization owner or administrator, or if you have confirmed in writing that you have the authority to make decisions on behalf of a workspace or organization (“<span class="policy-bold">Account Administrator</span>”), you represent and warrant that you are authorized to do so and agree that ThinkWyse is entitled to rely on your instructions.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Unauthorized Account Use.</span> You are responsible for notifying us at <a href="mailto:support@thinkwyse.com"></a>support@thinkwyse.com if you become aware of any unauthorized use of or access to your account. You understand and agree that we may require you to provide information that may be used to confirm your identity and help ensure the security of your account. ThinkWyse will not be liable for any loss, damages, liability, expenses or attorneys’ fees that you may incur as a result of someone else using your password or account, either with or without your knowledge and/or authorization, and regardless of whether you have advised us of such unauthorized use. You will be liable for losses, damages, liability, expenses and attorneys’ fees incurred by ThinkWyse or a third party due to someone else using your account. In the event that the Account Administrator or Customer loses access to an account or otherwise requests information about an account, ThinkWyse reserves the right to request from the Account Administrator or Customer any verification it deems necessary before restoring access to or providing information about such account in its sole discretion.
+                    </p>
+                
+                    <h4>
+                        LICENSE AND ACCEPTABLE USE
+                    </h4>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Your License.</span> Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-sublicensable, non-transferable, and revocable right to access and use the Service and Websites only for your own internal use (or for internal uses authorized by the applicable Account Administrator), and only in a manner that complies with these Terms and all legal requirements that apply to you or your use of the Service and Websites. ThinkWyse may revoke this license at any time, in its sole discretion.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Acceptable Use Policy.</span> You acknowledge and agree to comply with these Terms, including the following rules regarding acceptable use of the Service and Websites (the “<span class="policy-bold">Acceptable Use Policy</span>”).
+                    </p>
+
+                    <p class="policy-text">
+                        <strong>
+                            A. Disruption of the Service
+                        </strong>
+                    </p>
+                
+                    <p class="policy-text">
+                        You may not:
+                    
+                        <ul>
+                            <li class="policy-list-item">
+                                access, tamper with, or use non-public areas of the Service and Websites, ThinkWyse’s computer systems, or the technical delivery systems of ThinkWyse’s providers;
+                            </li>
+                            <li class="policy-list-item">
+                                probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measure;
+                            </li>
+                            <li class="policy-list-item">
+                                access or search the Service and Websites by any means other than ThinkWyse’s publicly supported interfaces (for example, “scraping”); or
+                            </li>
+                            <li class="policy-list-item">
+                                interfere with or disrupt, or attempt to interfere with or disrupt, our infrastructure or the access of any user, host or network, including, without limitation, by sending a virus, overloading, flooding, spamming, mail-bombing the Service and Websites, or by scripting the creation of User Content in such a manner as to interfere with or create an undue burden on the Service and Websites.
+                            </li>
+                        </ul>
+                    </p>
+                
+                    <p class="policy-text">
+                        <strong>
+                           B. Misuse of the Service and Websites
+                        </strong>
+                    </p>
+                
+                    <p class="policy-text">
+                        You may not use the Service and Websites to carry out, promote or support:
+                        <ul>
+                            <li class="policy-list-item">
+                                any unlawful or fraudulent activities;
+                            </li>
+                            <li class="policy-list-item">
+                                the impersonation of another person or entity or the misrepresentation of an affiliation with a person or entity (e.g., “spoofing”, “phishing”);
+                            </li>
+                            <li class="policy-list-item">
+                                activities that are defamatory, libelous or threatening, constitute hate speech, harassment, or stalking;
+                            </li>
+                            <li class="policy-list-item">
+                                the violation of the privacy rights of others, including the publishing or posting of other people’s confidential or personal information without their express authorization and permission;
+                            </li>
+                            <li class="policy-list-item">
+                                the sending of unsolicited communications, promotions advertisements, or spam;
+                            </li>
+                            <li class="policy-list-item">
+                                the publishing of or linking to malicious content; or
+                            </li>
+                            <li class="policy-list-item">
+                                the promotion or advertisement of products or services other than your own without appropriate authorization.
+                            </li>
+                        </ul>
+                    </p>
+                
+                    <p class="policy-text">
+                        <strong>
+                            User Content
+                        </strong>
+                    </p>
+                
+                    <p class="policy-text">
+                        You may not post any User Content on the Service or Websites or otherwise make use of the Service or Websites in a manner that:
+                    
+                        <ul>
+                            <li class="policy-list-item">
+                                violates any applicable law (including export control laws and regulations), any third party’s intellectual property rights, or anyone’s right of privacy or publicity;
+                            </li>
+                            <li class="policy-list-item">
+                                is deceptive, fraudulent, illegal, obscene, defamatory, disparaging, libelous, threatening, or pornographic (including child pornography, which, upon becoming aware of, we will remove and report to law enforcement, including the National Center for Missing and Exploited children);
+                            </li>
+                            <li class="policy-list-item">
+                                constitutes hate speech, harassment, or stalking;
+                            </li>
+                            <li class="policy-list-item">
+                                criticizes, berates, or attacks others based on their race, ethnicity, national origin, religion, sex, gender, sexual orientation, disability, or medical condition;
+                            </li>
+                            <li class="policy-list-item">
+                                contains any personal information of minors under the age of 16;
+                            </li>
+                            <li class="policy-list-item">
+                                contains any sensitive personal information as defined by applicable law (such as financial information, payment card numbers, social security numbers, or health information) without ThinkWyse’s prior written consent granted as part of a Customer Agreement;
+                            </li>
+                            <li class="policy-list-item">
+                                contains viruses, bots, worms, or similar harmful materials; or
+                            </li>
+                            <li class="policy-list-item">
+                                contains any information that you do not have a right to make available under law or any contractual or fiduciary duty;
+                            </li>
+                            <li class="policy-list-item">
+                                could otherwise cause damage to ThinkWyse or any third party.
+                            </li>
+                        </ul>
+                    </p>
+                
+                    <p class="policy-text">
+                        <strong>
+                            Acceptable Use Violations
+                        </strong>
+                    </p>
+                
+                    <p class="policy-text">
+                        If we reasonably believe a violation of this Acceptable Use Policy has occurred or may occur in the near future in a manner that may disrupt the Service or Websites for our Customers or other users, we may suspend or terminate your access to the Service and Websites, without any liability to us and in addition to any other remedies that may be available to us. ThinkWyse reserves the right to notify the applicable Account Administrator of the foregoing.
+                    </p>
+                
+                    <h4>
+                        PROPRIETARY RIGHTS
+                    </h4>
+                
+                    <p class="policy-text">
+                        ThinkWyse and its licensors exclusively own all right, title, and interest in and to all intellectual property rights in the Service and Websites. You agree to abide by all applicable copyright and other laws, as well as any additional copyright notices or restrictions contained in the Service and Websites. All present and future rights in and to trade secrets, patents, copyrights, trademarks, service marks, know-how, and other proprietary rights of any type under the laws of any governmental authority, domestic or foreign, including without limitation rights in and to all applications and registrations relating to the Service and Websites shall, as between you and ThinkWyse, at all times be and remain the sole and exclusive property of ThinkWyse.
+                    </p>
+                
+                    <h4>
+                        USER CONTENT AND FEEDBACK
+                    </h4>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">User Content and Submissions on the Service.</span> The Service allows you to create tasks and submit associated information, text, files, and other materials (collectively, “<span class="policy-bold">User Content</span>”) and to share that User Content with others. User Content submitted or otherwise made available to the Service is subject to the following terms:
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Free User Content.</span> Free Users maintain ownership of the User Content that they submit to the Service (“<span class="policy-bold">Free User Content</span>”). By submitting Free User Content, Free Users grant ThinkWyse a license to access, use, copy, reproduce, process, adapt, publish, transmit, and display that Free User Content, in order to provide the Service, and as permitted by ThinkWyse’s Privacy Statement, including if required to do so by law or in good faith to comply with legal process. We reserve the right to remove any Free User Content on the Service that violates these Terms or that is otherwise objectionable in ThinkWyse’s sole discretion.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Authorized User Content on the Service.</span> User Content submitted to the Service by Authorized Users is Customer Data, which is owned and controlled by the Customer, in accordance with the Customer Agreement.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Feedback.</span> The Service and the Websites may have certain features that allow you to submit comments, information, and other materials (collectively, “<span class="policy-bold">Feedback”</span>) to ThinkWyse, and/or share such Feedback with other users, or the public. If you submit Feedback, ThinkWyse may use such Feedback for any purpose without any compensation or obligation to you. We reserve the right to remove any Feedback posted in our public forums for any reason at our sole discretion.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">User Content and Feedback Representations.</span> You represent and warrant that you have all required rights to submit User Content and Feedback without violation or infringement of any third-party rights. You understand that ThinkWyse does not control, and is not responsible for, User Content or Feedback, and that by using the Service and/or Websites, you may be exposed to User Content or Feedback from other users that is offensive, indecent, inaccurate, misleading, or otherwise objectionable.
+                    </p>
+                
+                    <h4>
+                        WARRANTIES, DISCLAIMERS AND LIMITATION OF LIABILITY
+                    </h4>
+                
+                    <p class="policy-text policy-uppercase">
+                        the service and websites and user content, whether provided by ThinkWyse, its licensors, its vendors or its users, and other information on or accessible from the service and websites are provided “as is” without warranty, representation, condition, or guarantee of any kind, either expressed or implied, including but not limited to any implied warranties, representations, conditions or guarantees of quality, merchantability, fitness for a particular purpose, or non-infringement, all of which are disclaimed to the fullest extent permitted by law. specifically, but without limitation, ThinkWyse does not warrant that: (i) the information available on the service and websites is free of errors; (ii) the functions or features (including but not limited to mechanisms for the downloading and uploading of user content) will be uninterrupted, secure, or free of errors; (iii) defects will be corrected, or (iv) the service and websites or the server(s) that make the service and websites available are free of viruses or other harmful components. ThinkWyse does not warrant, endorse, guarantee or assume responsibility for any product or service advertised or offered by a third party through the service and websites or any website featured or linked to through the service and websites, and ThinkWyse will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or service and websites. ThinkWyse will not be liable for the offensive or illegal conduct of any third party. you voluntarily assume the risk of harm or damage from the foregoing. the foregoing limitations will apply even if a remedy fails of its essential purpose and to the fullest extent permitted by law.
+                    </p>
+                
+                    <p class="policy-text policy-uppercase">
+                        in no event shall ThinkWyse or its affiliates, licensors, vendors, or any of their respective directors, officers, employees, agents, or other representatives be liable to you or any other person or entity for any indirect, special, incidental, consequential, or punitive damages (including, but not limited to, damages for loss of profits, loss of data, loss of use, or costs of obtaining substitute goods or services), arising out of or in connection with the service and websites, any materials, information, or recommendations appearing on the service and websites, or any link provided on the service and websites, whether or not ThinkWyse has been advised of the possibility of such damages and whether based upon warranty, contract, tort, strict liability, violation of statute, or otherwise. this exclusion of liability shall apply to the fullest extent permitted by law. in any event, our aggregate liability will not exceed $100.
+                    </p>
+                
+                    <p class="policy-text">
+                        Some countries and U.S. jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for incidental or consequential damages such as above in this section. Accordingly, some of the above limitations may not apply to you.
+                    </p>
+                
+                    <h4>
+                        INDEMNIFICATION
+                    </h4>
+                
+                    <p class="policy-text policy-uppercase">
+                        you agree to indemnify, defend, and hold ThinkWyse, its affiliates, and its respective officers, directors, employees, members, shareholders, contractors, or representatives harmless from and against any claim or demand, including without limitation, reasonable attorneys’ fees, made in connection with or arising out of your use of the service and websites, your connection to the service and websites, your violation of the terms, your violation of an applicable law, your submission, posting, or transmission of user content to the service and websites, and/or your violation of any rights of another individual or entity. we reserve the right to assume the exclusive defense and control of such disputes, and in any event you will cooperate with us in asserting any available defenses.
+                    </p>
+                
+                    <h4>
+                        THIRD-PARTY LINKS, SERVICES AND WEBSITES
+                    </h4>
+                
+                    <p class="policy-text">
+                        The Service and Websites may include information and content provided by third parties, including links to third-party websites, resources, and/or goods and services. ThinkWyse is not responsible and will not be liable for any damages or losses caused by or relating to, (i) any content, advertising, products, or other materials on or available from such sites or resources, (ii) the availability of or any errors or omissions in such websites or resources, or (iii) any information handling practices or other business practices of the operators of such sites or resources. Your interactions with such third parties will be governed by the third parties’ own terms of service and privacy policies, and any other similar terms.
+                    </p>
+                
+                    <h4>
+                        GENERAL TERMS
+                    </h4>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Modifications to the Service.</span> We reserve the right at any time to modify or discontinue, temporarily or permanently, the Service and Websites (or any part thereof), with or without notice. You agree that ThinkWyse shall not be liable to you or any third party for any modification, suspension or discontinuation of the Service and Websites.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Controlling Law.</span> These Terms will be governed by the laws of California notwithstanding its conflicts of law principles. However, some countries (including those in the European Union) have laws that require agreements to be governed by the local laws of the consumer’s country. This paragraph does not override those laws.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Initial Dispute Resolution.</span> Most disputes can be resolved without resort to formal dispute resolution. If you take any issue with us or our Service, you agree that before taking any formal action, you will contact us at <a href="mailto:dispute-notice@thinkwyse.com">dispute-notice@thinkwyse.com</a> and provide a brief, written description of the dispute and your contact information (including your username, if your dispute relates to an account). Except for intellectual property and small claims court claims, the parties agree to use their best efforts to settle any dispute, claim, question, or disagreement directly through consultation with ThinkWyse, and good faith negotiations shall be a condition to either party initiating a lawsuit.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">No Waiver.</span> The failure of ThinkWyse to exercise or enforce any right or remedy in these Terms does not waive that right or remedy. If any provision of these Terms is found to be invalid or unenforceable, the parties agree that the court should endeavor to give effect, to the maximum extent permitted by law, to the parties’ intentions as reflected in the provision, and the other provisions of these Terms will remain in full force and effect.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Third-Party Beneficiaries.</span> You agree that, except as otherwise expressly provided in these Terms, there shall be no third-party beneficiaries to these Terms.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Entire Agreement.</span> These Terms (and all terms and conditions incorporated herein) constitute the entire agreement between you and ThinkWyse, and supersede any prior agreements between you and ThinkWyse on the subject matter. To the extent of any conflict or inconsistency between the provisions in these Terms and any other terms or resources referenced in these Terms, the terms contained directly in these Terms will first prevail; provided, however, that if there is a conflict or inconsistency between an applicable Customer Agreement and these Terms, the terms of the Customer Agreement will first prevail, followed by the provisions in these Terms, and then followed by the pages referenced in these Terms (e.g., the Privacy Statement). The applicable Customer will be responsible for notifying Authorized Users of those conflicts or inconsistencies and until such time the terms set forth herein will be binding.
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Miscellaneous.</span> These Terms, and any rights or licenses granted hereunder, may not be assigned or delegated by you. These Terms, and any rights or licenses granted hereunder, may be assigned or delegated by ThinkWyse without restriction. These Terms bind and inure to the benefit of each party and the party’s successors and permitted assigns. These Terms may not be modified by an oral statement by a representative of ThinkWyse. No agency, partnership, joint venture or employee-employer relationship is intended or created by these Terms. You agree that any agreements made by and between you and us in electronic form are as legally binding as if made in physical written form. If you are using the Service and Websites for or on behalf of the U.S. government, your license rights do not exceed those granted to non-government consumers. The section titles in these Terms are for convenience only and have no legal or contractual effect. Any provision of these Terms that by its nature is reasonably intended to survive beyond their termination or expiration shall survive. Notwithstanding the generality of the foregoing, the following sections shall survive any termination or expiration of these Terms: “A Few Initial Matters,” “How These Terms Apply; Users and Customers,” “Proprietary Rights,” “User Content and Feedback,” “Warranties, Disclaimers, and Limitations of Liability,” “Indemnification,” and “General Terms.”
+                    </p>
+                
+                    <p class="policy-text">
+                        <span class="policy-bold">Notices.</span> We may deliver notice to you by email, posting a notice on the Service and Websites or any other method we choose and such notice will be effective on dispatch. If you give notice to us, it will be effective when received and you must use the following physical or email address: (1) <a href="mailto:legal@thinkwyse.com">legal@thinkwyse.com</a>.
+                    </p>
+                
+                    <h4>
+                        QUESTIONS
+                    </h4>
+                
+                    <p class="policy-text">
+                        If you have any questions about these Terms, please contact us at <a href="mailto:terms-questions@thinkwyse.com">terms-questions@thinkwyse.com</a>.
+                    </p>
+                </div>
+            </div>
+            <!-- end Policy Section -->
+            
+            <!-- link-footer -->
+            <div class="link-footer">
+                <div class="link-footer-top">
+                    <div class="link-footer-top-logo">
+                        <img src="../assets/images/think-wyse-small.png" alt="">
+                    </div>
+                    <h1>
+                        Achieve excellence in your work with ThinkWyse
+                    </h1>
+                    <p>
+                        Experience the top-rated software in project and product management
+                    </p>
+                    <div class="link-footer-top-button-container">
+                        <button class="tab-content-button">Get Started</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="link-footer-bottom">
+                    <div class="footer-column">
+                        <div class="link-footer-bottom-logo">
+                            <a href="/"><img src="../assets/images/think-wyse-small.png" alt="" width="50"></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>ThinkWyse</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Customer Success</a></li>
+                            <li><a href="#">ThinkWyse Templates</a></li>
+                            <li><a href="#">Trust & Security</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Diversity</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Wavelength</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Workflow Solutions</h4>
+                        <ul>
+                            <li><a href="#">Project Management</a></li>
+                            <li><a href="#">Goal Management</a></li>
+                            <li><a href="#">Agile Management</a></li>
+                            <li><a href="#">Task Management</a></li>
+                            <li><a href="#">Increase Productivity</a></li>
+                            <li><a href="#">Work Management</a></li>
+                            <li><a href="#">Project Planning</a></li>
+                            <li><a href="#">To Do Lists</a></li>
+                            <li><a href="#">See all Uses</a></li>
+                            <li><a href="#">See All Teams</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">ThinkWyse Guide</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">App Directory</a></li>
+                            <li><a href="#">Developers & API</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">ThinkWyse Community</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">ThinkWyse for Nonprofits</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="#">11 Leadership Styles</a></li>
+                            <li><a href="#">110 Icebreaker Questions</a></li>
+                            <li><a href="#">Executive Summary Tips</a></li>
+                            <li><a href="#">Imposter Syndrome Tips</a></li>
+                            <li><a href="#">Prevent Team Burnout</a></li>
+                            <li><a href="#">SWOT Analysis Tips</a></li>
+                            <li><a href="#">What are OKRs?</a></li>
+                            <li><a href="#">What are SMART Goals?</a></li>
+                            <li><a href="#">What is Scope Creep?</a></li>
+                            <li><a href="#">See All Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <!-- end link-footer -->
+
+            <!-- Main Footer -->
+            <div class="main-footer">
+                <div class="main-footer-inside">
+                    <div class="footer-section">
+                        <p>&copy; 2023 ThinkWyse, Inc. All rights reserved.</p>
+                    </div>
+                    <div class="footer-section">
+                        <ul class="footer-links">
+                            <li><a href="/terms-of-service/">Terms</a> & <a href="/privacy-policy/">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- end Main Footer -->
+
+        </div>
+        <!-- End Container -->
+    
+
+    </div> 
+    <!-- main container -->
+
+    <script src="../assets/scripts/dropdown.js"></script>
+    <script src="../assets/scripts/top-scroll.js"></script>
+    <script src="../assets/scripts/scrolloverlay.js"></script>
+    <script src="../assets/scripts/tab-section.js"></script>
+
+    
+</body>
+</html>

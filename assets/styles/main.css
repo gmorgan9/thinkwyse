@@ -780,3 +780,80 @@ margin-top: 25px;
     text-decoration: underline;
 }
 /* end pricing section */
+
+/* Policy Sections - Privacy Policy, Terms of Service */
+.policy-section {
+    background-color: rgb(245, 245, 245);
+    height: auto;
+    left: 0 !important;
+    right: 0 !important;
+}
+.policy-section .policy-section-inside {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    line-height: 28px;
+    padding-bottom: 100px;
+}
+.policy-section .policy-section-inside h2 {
+    font-size: 56px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.policy-section .policy-section-inside h3 {
+    font-size: 37px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.policy-section .policy-section-inside h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.policy-section .policy-section-inside .sub-text {
+    text-transform: uppercase;
+    color: rgb(120, 132, 142);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.policy-section .policy-section-inside li {
+    color: rgb(100, 111, 121);
+    font-size: 16px;
+}
+.policy-section .policy-section-inside .policy-text {
+    color: rgb(100, 111, 121);
+    font-size: 18px;
+    padding-bottom: 15px;
+    line-height: 35px;
+}
+.policy-section .policy-section-inside .policy-bold {
+    font-weight: 500;
+}
+.policy-section .policy-section-inside .policy-list-item {
+    color: rgb(100, 111, 121);
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+.policy-section .policy-section-inside .policy-list-item-disk {
+    color: rgb(100, 111, 121);
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    list-style-type: disc;
+}
+.policy-section .policy-section-inside .policy-list-item-none {
+    color: rgb(100, 111, 121);
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+.policy-section .policy-section-inside .policy-uppercase {
+    text-transform: uppercase;
+}
+/* end Policy Section */
