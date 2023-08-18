@@ -13,7 +13,7 @@
 
     <script src="https://kit.fontawesome.com/83cbcc9270.js" crossorigin="anonymous"></script>
 
-   <link rel="stylesheet" href="../assets/styles/main.css?v=1.10.3">
+   <link rel="stylesheet" href="../assets/styles/main.css?v=1.11.1">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -203,7 +203,7 @@
 
             <!-- Pricing Section -->
             <div class="pricing-section">
-                <h2>
+                <h2 class="pricing-section-header">
                     pricing
                 </h2>
                 <h1>
@@ -212,13 +212,6 @@
                 <h3>
                     Access ThinkWyse's features. No credit card required. 
                 </h3>
-                <div class="signup-container">
-                    <form action="">
-                        <input type="text" class="signup-input" placeholder="name@company.com">
-                        <button class="signup-button">Get Started</button>
-                        <p>By signing up, I agree to the ThinkWyse <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
-                    </form>
-                </div>
 
                 <div class="pricing-card-section">
                     <div class="pricing-card-container">
@@ -234,13 +227,44 @@
                                 Free forever
                             </p>
                             <div class="pricing-basic-button-container">
-                                <button class="tab-content-button">Get Started</button>
+                                <button href="javascript:void(0);" id="mpopupLink" class="tab-content-button">Get Started</button>
                             </div>
+
+                            <!-- Modal popup box -->
+                            <div id="mpopupBox" class="mpopup">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">×</span>
+                                        <img src="../assets/images/get-started-2.png" alt="" width="200">
+                                        <h2 class="modal-header-h2">
+                                            Sign Up
+                                        </h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Please enter your email address, so we can get you started building your team in ThinkWyse.</p>
+                                        
+                                        <p class="get-started-agreement-text">
+                                            By signing up, I agree to the ThinkWyse <a href="../privacy-policy/">Privacy Policy</a> and <a href="../terms-of-service/">Terms of Service</a>.
+                                        </p>
+
+                                        <div class="signup-container">
+                                            <form action="">
+                                                <input type="text" class="signup-input" placeholder="name@company.com">
+                                                <button class="signup-button">Get Started</button>
+                                            </form>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>   
 
                             <h2>
                                 Manage tasks and personal to-dos:
                             </h2>
 
+                            <!-- features list -->
                             <ul>
                                 <li>
                                     <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;
@@ -303,10 +327,12 @@
                                     <span class="feature-text">100+ free integrations with your favorite apps - <span class="pricing-underline">Learn more</span>
                                 </li>
                             </ul>
+                            <!-- end features list -->
                         </div>
                     </div>
                 </div>
 
+                
             
 
 
@@ -314,7 +340,64 @@
             <!-- end Pricing Section -->
             
 
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <div class="faq-section-inside">
+                    <h2>
+                        Frequently asked questions
+                    </h2>
+
+                    <div class="faq-accordian">
+                        <div class="faq-accordian-set">
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    Is ThinkWyse really always free?
+                                    <i class="bi bi-chevron-down accordion-icon" style="float: right;"></i>
+                                </div>
+                                <div class="panel">
+                                    <p>
+                                        Yes! We firmly believe in making top-notch work management tools accessible to everyone. That's why our platform remains perpetually free. Our goal is to level the playing field, allowing individuals and teams to collaborate effectively, stay organized, and succeed without any financial barriers. Join us in our mission to provide essential resources without compromise.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="faq-accordian-set">
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    How secure is ThinkWyse?
+                                    <i class="bi bi-chevron-down accordion-icon" style="float: right;"></i>
+                                </div>
+                                <div class="panel">
+                                    <p>
+                                        Security is at the heart of our platform. We understand the importance of safeguarding your data and work processes. That's why we've implemented robust measures to ensure the highest level of protection. From advanced encryption to regular security audits, we go the extra mile to keep your information safe. You can trust that your valuable data is in capable hands, allowing you to focus on what matters most – achieving your goals with peace of mind.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="faq-accordian-set">
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    Are there resources or tutorials to help me get started?
+                                    <i class="bi bi-chevron-down accordion-icon" style="float: right;"></i>
+                                </div>
+                                <div class="panel">
+                                    <p>
+                                        Absolutely, we've put together a comprehensive range of resources and tutorials to assist you in getting started seamlessly. Our user-friendly guides, along with interactive video tutorials, are designed to walk you through every aspect of our work management platform. Whether you're a beginner or an experienced user, these resources will empower you to maximize your productivity and efficiency right from the beginning of your journey with us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+            <!-- end FAQ Section -->
             
+
             <!-- link-footer -->
             <div class="link-footer">
                 <div class="link-footer-top">
@@ -451,6 +534,8 @@
     <script src="../assets/scripts/top-scroll.js"></script>
     <script src="../assets/scripts/scrolloverlay.js"></script>
     <script src="../assets/scripts/tab-section.js"></script>
+    <script src="../assets/scripts/modal.js"></script>
+    <script src="../assets/scripts/accordian.js"></script>
 
     
 </body>
