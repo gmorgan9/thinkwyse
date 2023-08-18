@@ -13,7 +13,7 @@
 
     <script src="https://kit.fontawesome.com/83cbcc9270.js" crossorigin="anonymous"></script>
 
-   <link rel="stylesheet" href="assets/styles/main.css?v=1.9.1">
+   <link rel="stylesheet" href="../assets/styles/main.css?v=1.9.1">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -27,9 +27,7 @@
         <div class="top-container">
             <nav>
                 <div class="nav-container">
-                    <a class="logo" href="/"><img src="assets/images/think-wyse-bk.png" alt="" width="150"></a>
-
-
+                    <a class="logo" href="/"><img src="../assets/images/think-wyse-bk.png" alt="" width="150"></a>
 
 
                     <button onclick="toggleDropdown('productDropdown', this)" class="dropbtn">Product <span style="font-size: 10px;"><i class="bi bi-chevron-down"></i></span></button>
@@ -185,7 +183,7 @@
 
 
                 
-                    <a class="dropbtn" style="padding-left: 10px;" href="pricing/">Pricing</a>
+                    <a class="dropbtn" style="padding-left: 10px;" href="../pricing/">Pricing</a>
 
                 </div> <!-- end nav-container -->
 
@@ -203,312 +201,110 @@
         <div class="container">
 
 
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="left">
-                    <h1>
-                        The optimal solution for collaborative work
-                    </h1>
-                    <hr>
-                    <h3>
-                        Looking to enhance efficiency throughout your company? ThinkWyse offers flexibility and user-friendliness for all teams, enabling you to collaboratively deliver high-quality work at an accelerated pace.
-                    </h3>
-                </div>
-            
-                <div class="right">
-                    <img src="assets/images/placeholder-image.png" alt="" width="575">
-                </div>
-            </div>
-            <!-- end Hero Section -->
-            
-            <hr class="divider">
-
-            <!-- How Teams Use ThinkWyse -->
-            <div class="how-teams-use">
+            <!-- Pricing Section -->
+            <div class="pricing-section">
+                <h2>
+                    pricing
+                </h2>
                 <h1>
-                    See how teams use ThinkWyse
+                    Effortlessly arrange your tasks. Start free.
                 </h1>
+                <h3>
+                    Access ThinkWyse's features. No credit card required. 
+                </h3>
+                <div class="signup-container">
+                    <form action="">
+                        <input type="text" class="signup-input" placeholder="name@company.com">
+                        <button class="signup-button">Get Started</button>
+                        <p>By signing up, I agree to the ThinkWyse <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </form>
+                </div>
+
+                <div class="pricing-card-section">
+                    <div class="pricing-card-container">
+                        <div class="pricing-card">
+                            <h3>Basic</h3>
+                            <p>
+                                For individuals or teams just getting started with project management.
+                            </p>
+                            <h1>
+                                $0
+                            </h1>
+                            <p class="sub-text">
+                                Free forever
+                            </p>
+                            <div class="pricing-basic-button-container">
+                                <button class="tab-content-button">Get Started</button>
+                            </div>
+
+                            <h2>
+                                Manage tasks and personal to-dos:
+                            </h2>
+
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pricing-underline">Unlimited tasks</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unlimited projects
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unlimited messages
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unlimited activity log
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unlimited file storage (100MB per file)
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Collaborate with up to 15 teammates
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pricing-underline">List view projects</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Board view projects
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pricing-underline">Calendar view</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Assignee and due dates
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Project Overview
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Project Brief
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;iOS and Android mobile apps
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Time tracking with integrations - <span class="pricing-underline">See time tracking apps</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;100+ free integrations with your favorite apps - <span class="pricing-underline">Learn more</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             
-                <div class="tab-container">
-                    <div class="tab-sections">
-                        <button class="tablinks active" onclick="howTeams(event, 'marketing')">Marketing teams</button>
-                        <button class="tablinks" onclick="howTeams(event, 'it')">IT teams</button>
-                        <button class="tablinks" onclick="howTeams(event, 'ops')">Operation teams</button>
-                        <button class="tablinks" onclick="howTeams(event, 'project')">Project management</button>
-                        <button class="tablinks" onclick="howTeams(event, 'strategic')">Strategic planning</button>
-                    </div>
-    
-                    <div class="tabcontent active" id="marketing">
-                        <div class="tab-content-wrapper">
-                            <div class="side text-side">
-                                <div class="text-side-header">
-                                    <h3>Deliver impactful marketing strategies</h3>
-                                    <hr>
-                                </div>
-                                
-                                <div class="text-side-list">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Collaborate on cross-team work for campaigns
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Help teams quickly refocus around shifting business needs
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Automate processes for approvals
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-button-container">
-                                    <button class="tab-content-button">Explore marketing</button>
-                                </div>
-                            </div>
-                            <div class="side image-side">
-                                <div class="img-container">
-                                    <img src="assets/images/marketing-image-asana.webp">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div id="it" class="tabcontent">
-                        <div class="tab-content-wrapper">
-                            <div class="side text-side">
-                                <div class="text-side-header">
-                                    <h3>Automate and streamline IT requests</h3>
-                                    <hr>
-                                </div>
-                                
-                                <div class="text-side-list">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Reduce digital friction for better team velocity
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Get more control for critical security needs
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Streamline workflows accross teams
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-button-container">
-                                    <button class="tab-content-button">Explore IT</button>
-                                </div>
-                            </div>
-                            <div class="side image-side">
-                                <img src="assets/images/IT-asana.webp">
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div id="ops" class="tabcontent">
-                        <div class="tab-content-wrapper">
-                            <div class="side text-side">
-                                <div class="text-side-header">
-                                    <h3>Drive operational efficiency</h3>
-                                    <hr>
-                                </div>
-                                
-                                <div class="text-side-list">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Track work and see progress in real time
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Standardize and automate processes
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Unblock teams to hit revenue goals
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-button-container">
-                                    <button class="tab-content-button">Explore operations</button>
-                                </div>
-                            </div>
-                            <div class="side image-side">
-                                <img src="assets/images/operations-asana.webp">
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div id="project" class="tabcontent">
-                        <div class="tab-content-wrapper">
-                            <div class="side text-side">
-                                <div class="text-side-header">
-                                    <h3>Manage projects more efficiently</h3>
-                                    <hr>
-                                </div>
-                                
-                                <div class="text-side-list">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Remove silos for better collaboration
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Spot project gaps to instantly pivot and stay on track
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Track resources, goals and progress in one place
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-button-container">
-                                    <button class="tab-content-button">Explore project management</button>
-                                </div>
-                            </div>
-                            <div class="side image-side">
-                                <img src="assets/images/project-management-asana.webp">
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div id="strategic" class="tabcontent">
-                        <div class="tab-content-wrapper">
-                            <div class="side text-side">
-                                <div class="text-side-header">
-                                    <h3>Align teams to execute winning strategies</h3>
-                                    <hr>
-                                </div>
-                                
-                                <div class="text-side-list">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; Set anual plans to deliver results
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-check-circle"></i>&nbsp;&nbsp; See real-time insights to stay on track and on budget
-                                        </li>
-                                    </ul>
-                                    <div class="tab-button-container">
-                                        <button class="tab-content-button">Explore strategic management</button>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="side image-side">
-                                <img src="assets/images/strategic-asana.webp">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
 
-            </div> 
-            <!-- end How Teams Use ThinkWyse -->
+
+            </div>
+            <!-- end Pricing Section -->
             
-            <!-- Why ThinkWyse? -->
-            <div class="why-thinkwyse">
-                <div class="why-thinkwyse-inside">
-                    <h1>
-                        Why companies choose ThinkWyse
-                    </h1>
-                    <hr>
-                    <div class="why-sections">
-                        <div class="why">
-                            <div class="one">
-                                <p>
-                                    <i class="bi bi-check-circle"></i>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <p>
-                                    The only platform with goals built in
-                                </p>
-                            </div>
-                            <div class="three">
-                                <p>
-                                    See related tasks, collaborators and progress to quickly achieve business goals.
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="why">
-                            <div class="one">
-                                <p>
-                                    <i class="bi bi-check-circle"></i>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <p>
-                                    Rated best for cross-team collaboration
-                                </p>
-                            </div>
-                            <div class="three">
-                                <p>
-                                    Asana is rated as a leader in work management by industry experts.
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="why">
-                            <div class="one">
-                                <p>
-                                    <i class="bi bi-check-circle"></i>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <p>
-                                    Simple adoption, with less downtime
-                                </p>
-                            </div>
-                            <div class="three">
-                                <p>
-                                    Get tailored support to help your teams easily migrate existing data and adopt Asana.
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="why-button-container">
-                            <button class="tab-content-button">See how it works</button>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <!-- end Why ThinkWyse? -->
 
-            <!-- Get Started -->
-            <div class="get-started">
-                <div class="get-started-inside">
-                    <h1>
-                        Get started easily
-                    </h1>
-                    <p>
-                        Whether you want to start with a pre-built template for marketing, operations, prodict, learn more from a demo, or talk to out support team, ThinkWyse can help with that.
-                    </p>
-
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="assets/images/templates.webp" alt="Image 1">
-                            <h3>Start with a template</h3>
-                            <a href="#" class="card-link">See templates</a>
-                        </div>
-                        
-                        <div class="card">
-                            <img src="assets/images/demo.webp" alt="Image 2">
-                            <h3>See ThinkWyse in action</h3>
-                            <a href="#" class="card-link">View demo</a>
-                        </div>
-                        
-                        <div class="card">
-                            <img src="assets/images/sales.webp" alt="Image 3">
-                            <h3>Talk with our sales team</h3>
-                            <a href="#" class="card-link">Contact sales</a>
-                        </div>
-                    </div>
-                    
-
-
-                </div>
-            </div> 
-            <!-- end Get Started -->
-
+            
             <!-- link-footer -->
             <div class="link-footer">
                 <div class="link-footer-top">
                     <div class="link-footer-top-logo">
-                        <img src="assets/images/think-wyse-small.png" alt="">
+                        <img src="../assets/images/think-wyse-small.png" alt="">
                     </div>
                     <h1>
                         Achieve excellence in your work with ThinkWyse
@@ -524,7 +320,7 @@
                 <div class="link-footer-bottom">
                     <div class="footer-column">
                         <div class="link-footer-bottom-logo">
-                            <a href="/"><img src="assets/images/think-wyse-small.png" alt="" width="50"></a>
+                            <img src="../assets/images/think-wyse-small.png" alt="" width="50">
                         </div>
                     </div>
                     <div class="footer-column">
@@ -636,10 +432,10 @@
     </div> 
     <!-- main container -->
 
-    <script src="assets/scripts/dropdown.js"></script>
-    <script src="assets/scripts/top-scroll.js"></script>
-    <script src="assets/scripts/scrolloverlay.js"></script>
-    <script src="assets/scripts/tab-section.js"></script>
+    <script src="../assets/scripts/dropdown.js"></script>
+    <script src="../assets/scripts/top-scroll.js"></script>
+    <script src="../assets/scripts/scrolloverlay.js"></script>
+    <script src="../assets/scripts/tab-section.js"></script>
 
     
 </body>

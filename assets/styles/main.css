@@ -636,3 +636,142 @@ margin-top: 25px;
     margin: 0 10px;
 }
 /* END main-footer */
+
+
+
+/* PRICING */
+
+/* start pricing section */
+.pricing-section {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.pricing-section h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(143, 143, 144);
+    margin-bottom: 20px;
+}
+.pricing-section h1 {
+    font-weight: 300;
+    font-size: 42px;
+}
+.pricing-section h3 {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(102, 111, 120);
+}
+.signup-container {
+    display: inline;
+}
+.signup-container form {
+    margin-top: 30px;
+}
+.signup-input {
+  padding: 20px;
+  border: none;
+  /* background-color: pink; */
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+}
+.signup-button {
+  padding: 20px 50px 20px 50px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+  cursor: pointer;
+}
+.signup-container form p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(143, 143, 144);
+}
+.signup-container form p a {
+    color: rgb(143, 143, 144);
+}
+.signup-container form p a:hover {
+    color: rgb(100, 100, 100);
+}
+.pricing-section .pricing-card-section {
+    margin-top: 70px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pricing-section .pricing-card-section .pricing-card-container {
+    border: 1px solid rgb(149, 149, 149);
+    border-radius: 10px;
+}
+.pricing-section .pricing-card-section .pricing-card-container h3 {
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.pricing-section .pricing-card-section .pricing-card-container h1 {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 42px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.pricing-section .pricing-card-section .pricing-card-container h2 {
+    margin-top: 60px;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(85, 86, 87);
+    text-transform: unset;
+}
+.pricing-section .pricing-card-section .pricing-card-container p {
+    text-align: left;
+    font-size: 14px;
+    color: rgb(13, 14, 16);
+    margin-top: 15px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.pricing-section .pricing-card-section .pricing-card-container .sub-text {
+    text-align: left;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+    margin-top: 5px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.pricing-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.pricing-basic-button-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0 15px 135px;
+    background-color: transparent;
+    color: rgb(13, 14, 16);
+    border: 2px solid rgb(13, 14, 16);
+}
+.pricing-section .pricing-card-section .pricing-card-container ul {
+    text-align: left;
+    padding-left: 0;
+}
+.pricing-section .pricing-card-section .pricing-card-container ul li {
+    list-style: none;
+    padding-bottom: 12px;
+    color: rgb(112, 113, 114);
+    font-weight: 300;
+}
+.pricing-underline {
+    text-decoration: underline;
+}
+/* end pricing section */
