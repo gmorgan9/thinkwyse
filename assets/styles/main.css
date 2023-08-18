@@ -388,7 +388,7 @@ margin-top: 25px;
 
 /* START why-thinkwyse */
 .why-thinkwyse {
-    background-color: rgb(29, 65, 108);
+    background-color: rgb(54, 74, 97);
     height: auto;
     left: 0 !important;
     right: 0 !important;
@@ -401,7 +401,36 @@ margin-top: 25px;
 }
 .why-thinkwyse .why-thinkwyse-inside h1 {
     font-size: 3.5rem; 
-    font-weight: 300; 
-    padding-top: 25px;
+    font-weight: 400; 
+    padding-top: 40px;
+}
+.why-thinkwyse .why-thinkwyse-inside hr {
+    margin-top: 50px;
+}
+.why-thinkwyse .why-thinkwyse-inside .why-sections .why {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.why-thinkwyse .why-thinkwyse-inside .why-sections .why .one {
+    font-size: 60px;
+    margin-right: 40px;
+}
+.why-thinkwyse .why-thinkwyse-inside .why-sections .why .two {
+    width: 25%;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40px;
+}
+.why-thinkwyse .why-thinkwyse-inside .why-sections .why .three {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.why-button-container {
+    margin-top: 75px;
+    padding-bottom: 65px;
 }
 /* END why-thinkwyse */
